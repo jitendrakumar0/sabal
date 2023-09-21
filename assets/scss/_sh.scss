@@ -1,0 +1,334 @@
+@import "./variables";
+@import "../libs/bootstrap/scss/bootstrap";
+
+
+.subheading{
+    color: $theme1;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+ .Heading{
+    font-size: 45px;
+    color: $white;
+}
+
+.Heading2{
+    font-size: 45px;
+    color: $black;
+    font-weight: 600;
+}
+
+// services Section start 
+.servicesSection{
+    background-color: $theme2;
+
+    & .servicesCard{
+        margin-bottom: 30px;
+        & .cardIcon{
+            width: 40px;
+            height: 40px;
+         
+        }
+        & .cardHeading{
+            font-size: 20px;
+            color: $white;
+            margin-bottom: 8px;
+        }
+        & .cardPera{
+            font-size: 16px;
+            color: $white;
+            line-height: 24px;
+            opacity: 0.9;
+        }
+    }
+
+}
+
+@mixin sm {
+    @media only screen and (min-width: 640px) {
+        .servicesSection{
+      
+            & .subHeading{
+        
+            }
+            & .pageHeading{
+       
+            }
+            & .servicesCard{
+           
+                & .cardIcon{
+           
+                }
+                & .cardHeading{
+                    font-size: 19px;
+                }
+                & .cardPera{
+                    font-size: 14px;
+                }
+            }
+        
+        }
+    }
+}
+
+
+@include media-breakpoint-down(sm) {
+    // .servicesSection{
+      
+    //     & .subHeading{
+    
+    //     }
+    //     & .pageHeading{
+   
+    //     }
+    //     & .servicesCard{
+       
+    //         & .cardIcon{
+       
+    //         }
+    //         & .cardHeading{
+    //             font-size: 19px;
+    //         }
+    //         & .cardPera{
+    //             font-size: 14px;
+    //         }
+    //     }
+    
+    // }
+}
+// services Section end 
+
+// video section start 
+
+.videoSection{
+    // background-color: $theme2;
+    & .videoSectionInner{
+        position: relative;
+        transition: all 0.4s ease-in-out;
+        &:hover{
+            & .videoIcon{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        & .videoImg{
+            height: 250px;
+        }
+        & .videoIcon{
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $black;
+            background-color: $theme1;
+            padding: 22px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s ease-in-out;
+            &:hover{
+                background-color: $theme2;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .videoSection{
+
+    
+        & .videoSectionInner{
+         
+            &:hover{
+                & .videoIcon{
+                    
+                }
+            }
+            & .videoImg{
+            height: auto;
+            }
+            & .videoIcon{
+                width: 60px;
+                height: 60px;
+                opacity: 1;
+                visibility: visible;
+                opacity: 1;
+                padding: 18px;
+                &:hover{
+                   
+                }
+            }
+        }
+    }
+}
+
+// video section end 
+
+
+// product Section start 
+
+.productSection{
+    // background-color: $theme2;
+    & .productItem{
+        & .productImg{
+            margin-bottom: 22px;
+        }
+        & .cardHeading{
+            font-size: 24px;
+            font-weight: 600;
+            color: $black;
+            margin-bottom: 18px;
+        }
+        & .productInnerHeading{
+            font-size: 18px;
+            color: $black;
+            font-weight: 500;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                color: $theme1;
+            }
+        }
+        
+    }
+}
+
+
+@include media-breakpoint-down(md) {
+    .productSection{
+    
+        & .productItem{
+            & .productImg{
+            
+            }
+            & .cardHeading{
+                font-size: 20px;
+          
+            }
+            & .productInnerHeading{
+                font-size: 14px;
+           
+                &:hover{
+                    color: $theme1;
+                }
+            }
+            
+        }
+    }
+}
+
+
+// product Section end 
+
+// award Section start 
+
+.awardSection{
+    background-color: $theme2;
+    & .peraAwrd{
+        font-size: 16px;
+        font-weight: 500;
+        color: $white;
+    }
+    & .awardImg{
+        width: 100px;
+        height: 90px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .awardSection{
+     
+        & .peraAwrd{
+            font-size: 14px;
+      
+        }
+        & .awardImg{
+            width: 70px;
+            height: 60px;
+        }
+    }
+}
+
+// award Section end 
+
+// aboutus Section start 
+
+.aboutusSection{
+    background-color: $theme2;
+    & .aboutHeading{
+        font-size: 44px;
+        color: $white;
+        font-weight: 600;
+    }
+    & .peraAwrd{
+        font-size: 16px;
+        font-weight: 500;
+        color: $white;
+        &  .pera1{
+            color: $theme1;
+            font-weight: 500;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .aboutusSection{
+     
+        & .aboutHeading{
+            font-size: 34px;
+       
+        }
+        & .peraAwrd{
+     
+            &  .pera1{
+             
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-down(sm) {
+    .aboutusSection{
+        & .aboutHeading{
+            font-size: 28px;
+        }
+        & .peraAwrd{
+            font-size: 14px;
+            &  .pera1{
+             
+            }
+        }
+    }
+}
+
+
+// aboutus Section end 
+
+
+// ourWork sevtion start 
+
+.ourWork{
+    & .pastHeading{
+        font-size: 25px;
+        font-weight: 600;
+        color: $theme2;
+
+    }
+    & .posterImg{
+        & img{
+            transform: rotate(-1deg);
+        }
+    }
+    & .posterIm2{
+        & img{
+            transform: rotate(1deg);
+        }
+    }
+}
+
+// ourWork section end 
