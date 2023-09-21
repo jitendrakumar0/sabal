@@ -13,6 +13,10 @@ body{
         display: inline-block;
         margin-bottom: 10px;
         text-transform: uppercase;
+        @include sm{
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
         @include lg{
             font-size: 17px;
             margin-bottom: 20px;
@@ -24,6 +28,9 @@ body{
         color: #ffffff;
         text-transform: uppercase;
         margin-bottom: 0;
+        @include sm{
+            font-size: 35px;
+        } 
         @include lg{
             font-size: 45px;
         }
@@ -154,6 +161,7 @@ body{
                     font-size: 25px;
                     margin-bottom: 10px;
                     font-weight: 400;
+                    margin-top: 12px;
                     @include lg{
                     font-size: 48px;
                     }
