@@ -9,50 +9,349 @@
 
     <link href="./assets/css/style.min.css" rel="stylesheet">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
+<body class="bg-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-lg-3 py-2">
+        <div class="container">
+          <a class="navbar-brand d-grid" href="#">
+            <img src="./assets/img/logo.png" alt="Bootstrap">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-end text-bg-dark collapse navbar-collapse" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav me-auto me-lg-0 mb-2 mb-lg-0 justify-content-lg-end flex-grow-1 pe-lg-3">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link text-uppercase active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link text-uppercase" href="#">About</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="#">Work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="#">Award</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="#">Partners</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="#">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="#">News Room</a>
                 </li>
               </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-success" type="submit">Search</button>
-              </form>
             </div>
           </div>
         </div>
       </nav>
+
+    <!-- services section start -->
+
+    <div class="container-fluid py-lg-5 py-md-4 py-3 servicesSection">
+      <div class="container pt-lg-5 pt-md-4 py-3">
+        <div class="row gap-5">
+          <div class="col-12">
+            <div class="subheading  fw-semibold text-center">WHAT WE DO</div>
+            <div class="Heading  text-center fw-semibold ">OUR SERVICES</div>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="servicesCard">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="cardIcon"><img src="assets/img/videoCamera.svg" alt="videoCamera" class="img-fluid w-100 h-100"></div>
+                    </div>
+                    <div class="col">
+                      <div class="cardHeading fw-semibold">Array Equipment</div>
+                      <div class="cardPera fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="servicesCard">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="cardIcon"><img src="assets/img/videocamera2.svg" alt="videoCamera" class="img-fluid w-100 h-100"></div>
+                    </div>
+                    <div class="col">
+                      <div class="cardHeading fw-semibold">New Technologiest</div>
+                      <div class="cardPera fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="servicesCard">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="cardIcon"><img src="assets/img/Mask.svg" alt="videoCamera" class="img-fluid w-100 h-100"></div>
+                    </div>
+                    <div class="col">
+                      <div class="cardHeading fw-semibold">Versatile Actors</div>
+                      <div class="cardPera fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="servicesCard">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="cardIcon"><img src="assets/img/Mask.svg" alt="videoCamera" class="img-fluid w-100 h-100"></div>
+                    </div>
+                    <div class="col">
+                      <div class="cardHeading fw-semibold">Top Directions</div>
+                      <div class="cardPera fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="servicesCard">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="cardIcon"><img src="assets/img/VideoEditing.svg" alt="videoCamera" class="img-fluid w-100 h-100"></div>
+                    </div>
+                    <div class="col">
+                      <div class="cardHeading fw-semibold">Video Editing</div>
+                      <div class="cardPera fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="servicesCard">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="cardIcon"><img src="assets/img/transfarmer.svg" alt="videoCamera" class="img-fluid w-100 h-100"></div>
+                    </div>
+                    <div class="col">
+                      <div class="cardHeading fw-semibold">Distribution</div>
+                      <div class="cardPera fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services section start -->
+
+
+    <!-- video section start  -->
+    <div class="container-fluid py-lg-5 py-md-4 py-3 videoSection">
+      <div class="container">
+        <div class="row gap-5">
+          <div class="col-12">
+            <div class="subheading  fw-semibold text-center">THIS WEEK</div>
+            <div class="Heading2  text-center fw-semibold ">OUR UPCOMING MOVIES</div>
+          </div>
+          <div class="col-12">
+            <div class="row gy-4">
+              <div class="col-lg-4 col-md-6 ">
+                <div class="videoSectionInner">
+                  <div class="videoImg">
+                    <img src="assets/img/video1.jpg" alt="video" class="img-fluid w-100 h-100">
+                  </div>
+                  <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center videoIcon"><img src="assets/img/music.svg" alt="video play " class="img-fluid w-100 h-100"></a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 ">
+                <div class="videoSectionInner">
+                  <div class="videoImg">
+                    <img src="assets/img/video2.jpg" alt="video" class="img-fluid w-100 h-100">
+                  </div>
+                  <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center videoIcon"><img src="assets/img/music.svg" alt="video play " class="img-fluid w-100 h-100"></a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 ">
+                <div class="videoSectionInner">
+                  <div class="videoImg">
+                    <img src="assets/img/video3.jpg" alt="video" class="img-fluid w-100 h-100">
+                  </div>
+                  <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center videoIcon"><img src="assets/img/music.svg" alt="video play " class="img-fluid w-100 h-100"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- video section end  -->
+
+    <!-- award sectio  start  -->
+    <div class="container-fluid py-lg-5 py-md-4 py-3 awardSection">
+      <div class="container">
+        <div class="row gap-4">
+          <div class="col-12">
+            <div class="subheading  fw-semibold text-center">TRUST</div>
+            <div class="Heading  text-center fw-semibold ">IN FILMS WE TRUST</div>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <div class="row">
+              <div class="col-12">
+                <div class="peraAwrd text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</div>
+              </div>
+              <div class="col-12 mt-3">
+                <div class="row align-items-center justify-content-center mx-auto gy-4">
+                  <div class="col-lg-3 col-6">
+                    <div class="awardImg mx-auto"><img src="assets/img/trust1.png" alt="award" class="img-fluid w-100 h-100"></div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <div class="awardImg mx-auto"><img src="assets/img/trust1.png" alt="award" class="img-fluid w-100 h-100"></div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <div class="awardImg mx-auto"><img src="assets/img/trust1.png" alt="award" class="img-fluid w-100 h-100"></div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <div class="awardImg mx-auto"><img src="assets/img/trust1.png" alt="award" class="img-fluid w-100 h-100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- award sectio  end  -->
+
+    <!-- product card  section start  -->
+
+    <div class="container-fluid py-lg-5 py-md-4 py-3 productSection">
+      <div class="container">
+        <div class="row gap-5">
+          <div class="col-12">
+            <div class="subheading  fw-semibold text-center">PRODUCT</div>
+            <div class="Heading2  text-center fw-semibold ">WE MAKE FILMS & DRAMA</div>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="productItem">
+                  <div class="productImg"><img src="assets/img/product1.jpg" alt="product1" class="img-fluid w-100 h-100"></div>
+                  <div class="cardHeading text-center">Film Production</div>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                      <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Creative Direction</a></li>
+                      <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Digital Content</a></li>
+                      <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Visual Effects</a></li>
+                      <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Videos Solution</a></li>
+                    </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="productItem">
+                  <div class="productImg"><img src="assets/img/product2.jpg" alt="product1" class="img-fluid w-100 h-100"></div>
+                  <div class="cardHeading text-center">Creative Direction</div>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                      <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Creative Direction</a></li>
+                      <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Digital Content</a></li>
+                      <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Visual Effects</a></li>
+                      <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Videos Solution</a></li>
+                    </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="productItem">
+                  <div class="productImg"><img src="assets/img/product3.jpg" alt="product1" class="img-fluid w-100 h-100"></div>
+                  <div class="cardHeading text-center">Content Production</div>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                      <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Creative Direction</a></li>
+                      <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Digital Content</a></li>
+                      <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Visual Effects</a></li>
+                      <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Videos Solution</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product card  section end  -->
+
+
+
+
+    <!-- about us section start  -->
+    <div class="container-fluid py-lg-5 py-md-4 py-3 aboutusSection">
+      <div class="container">
+        <div class="row gap-5">
+          <div class="col-12">
+            <div class="subheading  fw-semibold text-center">If opportunity doesn’t knock, build a door.– Milton Berle.</div>
+            <div class="Heading  text-center fw-semibold ">About Us</div>
+          </div>
+          <div class="col-12">
+            <div class="row gap-lg-0 gap-3">
+              <div class="col-lg-6">
+                <div class="directorImg"><img src="assets/img/camera.avif" alt="directorImg" class="img-fluid w-100 h-100"></div>
+              </div>
+              <div class="col-lg-6">
+                <div class="row">
+                  <div class="col-lg-11 mx-auto">
+                    <div class="aboutHeading">What We Do</div>
+                  </div>
+                  <div class="col-lg-11 mx-auto">
+                    <div class="peraAwrd">We make <span class="pera1">movies</span> Full feature, shorts, tele-films, digital. The kind that go well with popcorn-cola, nimboo paani-chaat combos. The kind that go well whether consumed solo or with likeminded souls. The kind that ignite your brain’s frontal cortex (that’s the part that makes you laugh, cry, sigh).</div>
+                    <div class="peraAwrd mt-4">As producers, we are committed to our audiences first and foremost. We get that you have an option when you decide to watch cinema. We get that you’re choosing us over time spent on a valuable business deal, a job that pays well, an exam that needs preparation, a TV remote that’s addictive, etc etc etc. In an era of information overload, developing content that is original, meaningful and impacting lives, is critical to our company’s mission. In short, we value your choice, and your time.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="peraAwrd mt-3">As producers, we are committed to that talent we showcase. From the on-screen artists, to the lead technicians, to the back office that makes a project come of full circle – every one counts. Piecing together a cohesive, competent team that conjures celluloid vision to reality is our company’s strength.</div>
+                <div class="peraAwrd mt-3">As producers, we are committed to our four point value proposition –</div>
+                <div class="peraAwrd  mt-2"> <span class="pera1"> <b>Imagine. Inspire. Engage. Entertain.</b> </span> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about us section end  -->
+
+    <div class="container-fluid py-lg-5 py-md-4 py-3 ourWork">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="Heading2  text-center fw-semibold ">OUR WORK</div>
+            <div class="subheading  fw-semibold text-center">“Creative is the place where no one else has ever been. You have to leave the city of your comfort and go into the wilderness of your intuition. What you’ll discover will be wonderful. What you’ll discover is yourself." — Alan Alda</div>
+          </div>
+          <div class="col-12">
+            <div class="  pastHeading text-center "> PAST RELEASES</div>
+          </div>
+          <div class="col-10 mx-auto">
+            <div class="row">
+              <div class="col-6">
+                <div class="posterImg"><img src="assets/img/empire.png" alt="empire" class="img-fluid w-100 h-100"></div>
+              </div>
+              <div class="col-6">
+                <div class="posterImg posterIm2"><img src="assets/img/empire2.png" alt="empire" class="img-fluid w-100 h-100"></div>
+              </div>
+              <div class="col-6">
+                <div class="posterImg"><img src="assets/img/emire3.png" alt="empire" class="img-fluid w-100 h-100"></div>
+              </div>
+              <div class="col-6">
+                <div class="posterImg posterIm2"><img src="assets/img/empire4.png" alt="empire" class="img-fluid w-100 h-100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- <script src="./assets/libs/swiper/js/swiper.js"></script> -->

@@ -1,0 +1,47 @@
+@import "./mixins.scss";
+
+nav.navbar {
+    [class*=container] {
+        .navbar-brand {
+            img {
+                height: 30px;
+                filter: drop-shadow(0px 0px 4px white)drop-shadow(0px 0px 4px white);
+                @include md {
+                    height: 50px;
+                }
+                @include lg {
+                    height: 60px;
+                }
+            }
+        }
+        .navbar-toggler {
+            .navbar-toggler-icon {
+
+            }
+        }
+        .offcanvas {
+            .offcanvas-header {
+                .offcanvas-title {
+
+                }
+                .btn-close {
+
+                }
+            }
+            .offcanvas-body {
+                ul.navbar-nav {
+                    gap: 20px;
+                    li.nav-item {
+                        .nav-link {
+                            --bs-nav-link-color: $white;
+                            --bs-nav-link-font-size: 13px;
+                            &.active {
+                                --bs-navbar-active-color: darken($white, 20);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
