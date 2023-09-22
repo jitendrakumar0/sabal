@@ -1,0 +1,70 @@
+.partnersSection{
+
+    & .services-ticker-block {
+        position: relative;
+        display:flex; 
+        align-items:center;
+        overflow-x: hidden;
+        
+      }
+      
+     & .stb_line_single {
+        position: relative;
+        white-space: nowrap;
+        padding: 0;
+        will-change: transform;
+      }
+      & .stb-item {
+        padding: 0;
+        display: inline-block;
+        margin-right: 1rem;
+        @include sm{
+            padding: 0;
+            display: inline-block;
+            margin-right: 3rem;
+        }
+        @include md{
+            padding: 0;
+            display: inline-block;
+            margin-right: 4rem;
+        }
+        @include lg{
+            padding: 0;
+            display: inline-block;
+            margin-right: 5rem;
+        }
+      
+      }
+      & .logo {
+        width: 80px;
+        height: 70px;
+        display: inline-flex;
+        align-items: center;
+        & img{
+            object-fit: contain;
+       
+            transition: all 0.3s ease-in-out;
+        }
+        @include sm{
+            display: inline-flex;
+            align-items: center;
+            width: 120px;
+            height: 100px;
+            transition: all 0.3s ease-in-out;
+            
+            &:hover{
+                & img{
+                    // transform: translateY(-20px);
+                    transform: scale(0.9);
+                }
+            }
+            & img{
+                object-fit: contain;
+           
+                transition: all 0.3s ease-in-out;
+            }
+        }
+      }
+    
+      
+}
