@@ -50,19 +50,19 @@
 
 // Taem Section Start
 .teamSection{
-    & .heading{
-        font-weight: 600;
-        font-size: 20px;
-        letter-spacing: 2px;
-        font-family: "Playfair Display", serif;
-        text-transform: uppercase;
-    }
-    & .subheading{
-        font-weight: 600;
-        font-size: 45px;
-        text-transform: uppercase;
-        font-family: "Josefin Sans", sans-serif;
-    }
+    // & .heading{
+    //     font-weight: 600;
+    //     font-size: 20px;
+    //     letter-spacing: 2px;
+    //     font-family: "Playfair Display", serif;
+    //     text-transform: uppercase;
+    // }
+    // & .subheading{
+    //     font-weight: 600;
+    //     font-size: 45px;
+    //     text-transform: uppercase;
+    //     font-family: "Josefin Sans", sans-serif;
+    // }
     & .cardSection{
         & .mainCard{
             transition: all .5s ease-in-out;
@@ -128,19 +128,19 @@
 
 // partners section Start
 .partnersLogoSection{
-    & .heading{
-        font-weight: 600;
-        font-size: 45px;
-        letter-spacing: 2px;
-        font-family: "Playfair Display", serif;
-        text-transform: uppercase;
-    }
-    & .subheading{
-        font-weight: 600;
-        font-size: 20px;
-        text-transform: uppercase;
-        font-family: "Josefin Sans", sans-serif;
-    }
+    // & .heading{
+    //     font-weight: 600;
+    //     font-size: 45px;
+    //     letter-spacing: 2px;
+    //     font-family: "Playfair Display", serif;
+    //     text-transform: uppercase;
+    // }
+    // & .subheading{
+    //     font-weight: 600;
+    //     font-size: 20px;
+    //     text-transform: uppercase;
+    //     font-family: "Josefin Sans", sans-serif;
+    // }
     & .card{
         & .partnersLogo{
             height: 200px;

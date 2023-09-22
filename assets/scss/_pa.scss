@@ -1,10 +1,7 @@
 @import "./mixins.scss";
-body{
-    background-color: $black !important;
-}
 
 .mainHeading{
-    // margin-bottom: 40px;
+    margin-bottom: 40px;
     // padding-top: 70px;
     & .heading{
         font-weight: 700;
@@ -43,6 +40,7 @@ body{
             font-size: 35px;
         }
         @include lg{
+            line-height: 110%;
             font-size: 35px;
         }
         @include xl{
@@ -50,11 +48,13 @@ body{
         }
         @include xxl{
             font-size: 45px;
+            line-height: 110%;
         }
     }
 }
 
 .historyFluid{
+    background-color: $theme2 !important;
     padding-bottom: 70px;
     & .historySwiperNavigation{
         position: relative;
@@ -484,6 +484,7 @@ body{
 }
 
 .footerFluid{
+    background-color: $theme2;
     & .logo{
         width: 87px;
         height: 50px;
