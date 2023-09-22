@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="assets/libs/jquery/jquery.js"></script>
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="./assets/libs/swiper/css/swiper.css" rel="stylesheet">
 
     <link href="./assets/css/style.min.css" rel="stylesheet">
 </head>
 <body class="bg-white">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-lg-3 py-2">
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top py-lg-3 py-2">
         <div class="container">
             <a class="navbar-brand d-grid" href="#">
             <img src="./assets/img/logo.png" alt="Bootstrap">
@@ -20,7 +21,7 @@
             </button>
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Sabal Production</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -29,33 +30,36 @@
                     <a class="nav-link text-uppercase active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#">About</a>
+                    <a class="nav-link text-uppercase" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#">Work</a>
+                    <a class="nav-link text-uppercase" href="#award">Award</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#">Award</a>
+                    <a class="nav-link text-uppercase" href="#history">History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#releases">Releases</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#team">Team</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-uppercase" href="#">Partners</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#">Team</a>
+                    <a class="nav-link text-uppercase" href="#">Contact us</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link text-uppercase" href="#">News Room</a>
-                </li>
+                </li> -->
                 </ul>
             </div>
             </div>
         </div>
     </nav>
     <!-- hero section start -->
-    <div class="container-fluid heroFluid px-0 overflow-hidden">
+    <div class="container-fluid heroFluid px-0 vh-100 overflow-hidden">
         <div class="row h-100">
             <div class="col-12 h-100">
                 <div class="swiper heroSwiper h-100">
@@ -65,7 +69,7 @@
                                 <div class="col-lg-6 col-12 px-4 text-center">
                                     <div class="heroTxtBox">
                                         <div class="heroHeading">GET THE BEST MOVIES HERE</div>
-                                        <div class="heroSubHeading">Zico Is High Quality Production House</div>
+                                        <div class="heroSubHeading">Sabal Is High Quality Production House</div>
                                         <button class="heroBtn d-flex justify-content-center align-items-center">Launch Now !</button>
                                     </div>
                                     <div class="socialLinks">
@@ -94,7 +98,7 @@
                                 <div class="col-lg-6 col-12 px-4 text-center">
                                     <div class="heroTxtBox">
                                         <div class="heroHeading">GET THE BEST MOVIES HERE</div>
-                                        <div class="heroSubHeading">Zico Is High Quality Production House</div>
+                                        <div class="heroSubHeading">Sabal Is High Quality Production House</div>
                                         <button class="heroBtn d-flex justify-content-center align-items-center">Launch Now !</button>
                                     </div>
                                     <div class="socialLinks">
@@ -123,7 +127,7 @@
                                 <div class="col-lg-6 col-12 px-4 text-center">
                                     <div class="heroTxtBox">
                                         <div class="heroHeading">GET THE BEST MOVIES HERE</div>
-                                        <div class="heroSubHeading">Zico Is High Quality Production House</div>
+                                        <div class="heroSubHeading">Sabal Is High Quality Production House</div>
                                         <button class="heroBtn d-flex justify-content-center align-items-center">Launch Now !</button>
                                     </div>
                                     <div class="socialLinks">
@@ -155,7 +159,8 @@
     <!-- hero section end -->
 
     <!-- about us section start  -->
-    <div class="container-fluid py-lg-5 py-md-4 py-3 aboutusSection">
+    <div class="container-fluid py-lg-5 py-md-4 py-3 aboutusSection position-relative" >
+        <div id="about" class="position-absolute invisible w-100 start-0 bottom-100" style="height: 80px;"></div>
         <div class="container">
             <div class="row gap-5">
                 <!-- <div class="col-12 mainHeading">
@@ -192,7 +197,8 @@
     <!-- about us section end  -->
 
     <!-- award sectio  start  -->
-    <div class="container-fluid py-lg-5 pb-md-4 pb-3 awardSection">
+    <div class="container-fluid py-lg-5 py-md-4 py-3 awardSection position-relative">
+        <div id="award" class="position-absolute invisible w-100 start-0 bottom-100" style="height: 80px;"></div>
         <div class="container">
             <div class="row mainHeading text-center">
                 <div class="col-12"><div class="heading">TRUST</div></div>
@@ -268,7 +274,8 @@
     <!-- video section end  -->
 
     <!-- history section start -->
-    <div class="container-fluid historyFluid py-lg-5 py-md-4 py-3 px-0 overflow-hidden bg-dark">
+    <div class="container-fluid historyFluid py-lg-5 py-md-4 py-3 px-0 overflow-hidden bg-dark position-relative">
+        <div id="history" class="position-absolute invisible w-100 start-0 bottom-100" style="height: 80px;"></div>
         <div class="row mainHeading text-center">
             <div class="col-12"><div class="heading">HISTORY</div></div>
             <div class="col-12"><div class="subHeading">OUR HISTORY</div></div>
@@ -641,7 +648,8 @@
     <!-- award sectio  end  -->
 
     <!-- our work start  -->
-    <div class="container-fluid py-lg-5 py-md-4 py-3 ourWork">
+    <div class="container-fluid py-lg-5 py-md-4 py-3 ourWork position-relative">
+        <div id="releases" class="position-absolute invisible w-100 start-0 bottom-100" style="height: 80px;"></div>
         <div class="container">
             <div class="row mainHeading text-center">
                 <div class="col-12"><div class="heading"> PAST RELEASES</div></div>
@@ -655,8 +663,8 @@
             <!-- <div class="col-12">
             <div class="  pastHeading text-center mt-4"> PAST RELEASES</div>
             </div> -->
-            <div class="col-12 mx-auto mt-5">
-            <div class="row gy-5">
+            <div class="col-12 mx-auto mt-lg-5 mt-3">
+            <div class="row gy-lg-5 gy-3">
                 <div class="col-lg-4 col-md-6 col-12">
                 <div class="posterImg"><img src="assets/img/empire.png" alt="empire" class="img-fluid w-100 h-100"></div>
                 </div>
@@ -707,7 +715,7 @@
                                     <div class="workImg">
                                         <img src="./assets/img/ladydj.jpg" alt="workimg" class="h-100 w-100 img-fluid">
                                         </div>
-                                        <div class="worktext w-100 position-absolute start-50 translate-middle-x">
+                                        <div class="worktext w-100 position-absolute translate-middle start-50 ">
                                             <div class="head text-white text-center">
                                                 We make it awesome
                                             </div>
@@ -724,7 +732,7 @@
                                     <div class="workImg">
                                         <img src="./assets/img/jalpari.jpg" alt="workimg" class="h-100 w-100 img-fluid">
                                         </div>
-                                        <div class="worktext w-100 position-absolute start-50 translate-middle-x">
+                                        <div class="worktext w-100 position-absolute translate-middle start-50 ">
                                             <div class="head text-white text-center">
                                                 my dream girl
                                             </div>
@@ -743,41 +751,42 @@
     <!-- featured Section Ends -->
 
     <!-- Directors Section Start -->
-    <div class="container-fluid teamSection bg-light py-lg-5 py-md-4 py-3">
+    <div class="container-fluid teamSection bg-light py-lg-5 py-md-4 py-3 position-relative">
+        <div id="team" class="position-absolute invisible w-100 start-0 bottom-100" style="height: 80px;"></div>
         <div class="container">
             <div class="row mainHeading text-center">
                 <div class="col-12"><div class="heading">OUR TEAM</div></div>
-                <div class="col-12"><div class="subHeading text-theme2"> FOUNDERS OF ZICO</div></div>
+                <div class="col-12"><div class="subHeading text-theme2"> FOUNDERS OF Sabal</div></div>
             </div>
             <div class="row">
                 <div class="col-12">
                     <div class="cardSection ">
-                        <div class="row">
-                            <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="row cardSectionRow">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-4">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/dir1.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -792,31 +801,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-4">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/dir2.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -831,31 +840,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-4">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/dir3.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -887,37 +896,37 @@
                         our team
                     </div>
                     <div class="subHeading text-center text-dark">
-                        DIRECTORS OF ZICO
+                        DIRECTORS OF Sabal
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="cardSection pt4">
-                        <div class="row">
-                            <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="row cardSectionRow">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-3">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/team01.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -932,31 +941,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-3">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/team02.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -971,31 +980,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-3">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/team03.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -1010,31 +1019,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-3">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/team04.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -1049,31 +1058,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-3">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/team05.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -1088,31 +1097,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-3">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/team06.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -1127,31 +1136,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-3">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/team07.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -1166,31 +1175,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-3">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/team08.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -1214,11 +1223,11 @@
     <!-- team Section Ends -->
 
     <!-- partners Section start -->
-    <div class="container-fluid bg-black py-5 partnersLogoSection">
+    <!-- <div class="container-fluid bg-black py-5 partnersLogoSection">
         <div class="container">
             <div class="row mainHeading text-center">
                 <div class="col-12"><div class="subHeading"> OUR PARTNERS</div></div>
-                <!-- <div class="col-12"><div class="subHeading"> “Partnerships are good engines for narrative.” - Tommy Lee Jones</div></div> -->
+                <div class="col-12"><div class="subHeading"> “Partnerships are good engines for narrative.” - Tommy Lee Jones</div></div>
             </div>
             <div class="row">
                 <div class="col-12">
@@ -1337,9 +1346,45 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- partners Section ends -->
-    
+
+    <!-- contact us start -->
+        <div class="container-fluid contactFluid pb-lg-5 pb-md-4 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="row">
+                            <div class="col-12 mb-4">
+                                <div class="formHeading">Get In Touch</div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-12">
+                                        <input type="text" class="form-control contactInp" name="" id="" placeholder="Name">
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <input type="email" class="form-control contactInp" name="" id="" placeholder="Email">
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <input type="tel" class="form-control contactInp" name="" id="" placeholder="Phone">
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <input type="text" class="form-control contactInp" name="" id="" placeholder="Subject">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea name="" class="txtArea" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12"></div>
+                </div>
+            </div>
+        </div>
+    <!-- contact us end -->
+
     <!-- footer section start -->
         <footer>
             <div class="container-fluid footerFluid py-3">
@@ -1463,7 +1508,7 @@
                 </div> -->
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
-                        <div class="copyRyt">© Zico is Proudly Owned by <span>EnvyTheme</span></div>
+                        <div class="copyRyt">© Sabal is Proudly Owned by <span>EnvyTheme</span></div>
                     </div>
                 </div>
             </div>
@@ -1494,6 +1539,16 @@
                 return '<span class="' + className + '">' + "<span class='year'>" + years[index] + "</span>" + "</span>";
         },
             },
+        });
+    </script>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll <= 120) {
+                $("nav.navbar").removeClass("nav-active");
+            } else {
+                $("nav.navbar").addClass("nav-active");
+            }
         });
     </script>
 </body>

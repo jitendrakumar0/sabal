@@ -1,29 +1,29 @@
 @import "./variables";
 
-.mainHeading{
-    & .heading{
-        font-weight: 700;
-        font-size: 17px;
-        color: #c1ab65;
+// .mainHeading{
+//     & .heading{
+//         font-weight: 700;
+//         font-size: 17px;
+//         color: #c1ab65;
   
-        margin-bottom: 10px;
-        text-transform: uppercase;
-        @include lg{
-            font-size: 17px;
-            margin-bottom: 20px;
-        }
-    }
-    & .subHeading{
-        font-weight: 600;
-        font-size: 30px;
-        color: #ffffff;
-        text-transform: uppercase;
-        margin-bottom: 0;
-        @include lg{
-            font-size: 45px;
-        }
-    }
-}
+//         margin-bottom: 10px;
+//         text-transform: uppercase;
+//         @include lg{
+//             font-size: 17px;
+//             margin-bottom: 20px;
+//         }
+//     }
+//     & .subHeading{
+//         font-weight: 600;
+//         font-size: 30px;
+//         color: #ffffff;
+//         text-transform: uppercase;
+//         margin-bottom: 0;
+//         @include lg{
+//             font-size: 45px;
+//         }
+//     }
+// }
 
 
 .Heading2{
@@ -201,31 +201,40 @@
 
         }
         & .cardHeading{
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 600;
-            margin-bottom: 18px;
-
+            margin-bottom: 8px;
+            @include sm{
+            } 
             @include md{
-
-                font-size: 24px;
+            }
+            @include lg{
+                font-size: 20px;
                 font-weight: 600;
-                color: $black;
                 margin-bottom: 18px;
-
+            }
+            @include xl{
+            }
+            @include xxl{
             }
         }
         & .productInnerHeading{
-            font-size: 14px;
-            font-weight: 500;
+            font-size: 13px;
+            color: $theme2;
             &:hover{
                 color: $theme1;
             }
+            @include sm{
+            } 
             @include md{
-                font-size: 18px;
-                color: $black;
+            }
+            @include lg{
+                font-size: 14px;
                 font-weight: 500;
-                transition: all 0.5s ease-in-out;
-
+            }
+            @include xl{
+            }
+            @include xxl{
             }
         }
         
