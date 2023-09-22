@@ -276,6 +276,14 @@ body{
 }
 
 .heroFluid{
+    height: calc(100vh - 56px);
+    min-height: 400px;
+    @include md {
+        height: calc(100vh - 76px);
+    }
+    @include lg {
+        height: calc(100vh - 102px);
+    }
     & .heroSwiper{
         & .heroSwiperWrapper{
             & .heroSwiperSlide{
@@ -391,16 +399,16 @@ body{
                     z-index: 3;
                     position: absolute;
                     left: 50%;
-                    top: 70%;
+                    bottom: 10px;
                     transform: translateX(-50%);
                     @include sm{
                         left: 50%;
-                        top: 68%;
+                        bottom: 10px;
                         transform: translateX(-50%);
                     }
                     @include md{
                         left: 50%;
-                        top: 70%;
+                        bottom: 10px;
                         transform: translateX(-50%);
                     }
                     @include lg{

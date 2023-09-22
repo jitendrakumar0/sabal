@@ -1,9 +1,6 @@
 @import "./variables";
-@import "../libs/bootstrap/scss/bootstrap";
 
 .mainHeading{
-    margin-bottom: 40px;
-    padding-top: 70px;
     & .heading{
         font-weight: 700;
         font-size: 17px;
@@ -283,19 +280,19 @@
 // aboutus Section start 
 
 .aboutusSection{
-    background-color: $theme2;
+    background-color: $white;
     & .aboutHeading{
         font-size: 28px;
         font-weight: 600;
         
         @include md{
             font-size: 44px;
-            color: $white;
+            color: $black;
             font-weight: 600;
         }
         @include sm{
             font-size: 34px;
-            color: $white;
+            color: $black;
             font-weight: 600;
         }
         
@@ -303,13 +300,13 @@
     & .peraAwrd{
         font-size: 14px;
         &  .pera1{
-            color: $theme1;
+            color: lighten($black, 30);
             font-weight: 500;
         }
         @include sm{
             font-size: 16px;
             font-weight: 500;
-            color: $white;
+            color: lighten($black, 30);
         }
     }
 }
