@@ -1,17 +1,33 @@
 @import "./variables";
 @import "../libs/bootstrap/scss/bootstrap";
 
+.mainHeading{
+    margin-bottom: 40px;
+    padding-top: 70px;
+    & .heading{
+        font-weight: 700;
+        font-size: 17px;
+        color: #c1ab65;
+  
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        @include lg{
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+    }
+    & .subHeading{
+        font-weight: 600;
+        font-size: 30px;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        @include lg{
+            font-size: 45px;
+        }
+    }
+}
 
-.subheading{
-    color: $theme1;
-    font-size: 20px;
-    letter-spacing: 2px;
-    margin-bottom: 8px;
-}
- .Heading{
-    font-size: 45px;
-    color: $white;
-}
 
 .Heading2{
     font-size: 45px;
@@ -25,79 +41,44 @@
 
     & .servicesCard{
         margin-bottom: 30px;
+        @include sm{
+            margin-bottom: 30px;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                & .cardIcon{
+                    transform: rotate(180deg);
+                }
+            }
+        }
         & .cardIcon{
             width: 40px;
             height: 40px;
+            transition: all 0.3s ease-in-out;
+
          
         }
         & .cardHeading{
-            font-size: 20px;
+            font-size: 18px;
             color: $white;
             margin-bottom: 8px;
+            @include lg{
+                font-size: 20px;
+            }
         }
         & .cardPera{
-            font-size: 16px;
+            font-size: 14px;
             color: $white;
             line-height: 24px;
             opacity: 0.9;
+            @include sm{
+                font-size: 16px;
+            }
+          
         }
     }
 
 }
 
-@mixin sm {
-    @media only screen and (min-width: 640px) {
-        .servicesSection{
-      
-            & .subHeading{
-        
-            }
-            & .pageHeading{
-       
-            }
-            & .servicesCard{
-           
-                & .cardIcon{
-           
-                }
-                & .cardHeading{
-                    font-size: 19px;
-                }
-                & .cardPera{
-                    font-size: 14px;
-                }
-            }
-        
-        }
-    }
-}
-
-
-@include media-breakpoint-down(sm) {
-    // .servicesSection{
-      
-    //     & .subHeading{
-    
-    //     }
-    //     & .pageHeading{
-   
-    //     }
-    //     & .servicesCard{
-       
-    //         & .cardIcon{
-       
-    //         }
-    //         & .cardHeading{
-    //             font-size: 19px;
-    //         }
-    //         & .cardPera{
-    //             font-size: 14px;
-    //         }
-    //     }
-    
-    // }
-}
-// services Section end 
 
 // video section start 
 
@@ -106,16 +87,62 @@
     & .videoSectionInner{
         position: relative;
         transition: all 0.4s ease-in-out;
-        &:hover{
-            & .videoIcon{
-                visibility: visible;
-                opacity: 1;
+        overflow: hidden;
+        @include sm{
+            position: relative;
+            transition: all 0.4s ease-in-out;
+            &:hover{
+                & .videoIcon{
+                    visibility: visible;
+                    opacity: 1;
+                }
+                & .videoImg{
+                    transition: all 0.4s ease-in-out;
+
+                    & img{
+
+                        transform: scale(1.1);
+                    }
+                }
+                
             }
         }
+      
         & .videoImg{
-            height: 250px;
+            height:100%;
+            @include sm{
+                height: 250px;
+                overflow: hidden;
+                & img{
+             transition: all 0.4s ease-in-out;
+             overflow: hidden;
+
+                }
+            }
         }
         & .videoIcon{
+
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $black;
+            background-color: $theme1;
+
+            opacity: 1;
+            visibility: visible;
+            opacity: 1;
+            padding: 18px;
+            &:hover{
+                background-color: $theme2;
+            }
+            @include sm{
+             
             display: inline-block;
             text-align: center;
             border-radius: 50%;
@@ -131,41 +158,11 @@
             opacity: 0;
             visibility: hidden;
             transition: all 0.4s ease-in-out;
-            &:hover{
-                background-color: $theme2;
             }
         }
     }
 }
 
-@include media-breakpoint-down(sm) {
-    .videoSection{
-
-    
-        & .videoSectionInner{
-         
-            &:hover{
-                & .videoIcon{
-                    
-                }
-            }
-            & .videoImg{
-            height: auto;
-            }
-            & .videoIcon{
-                width: 60px;
-                height: 60px;
-                opacity: 1;
-                visibility: visible;
-                opacity: 1;
-                padding: 18px;
-                &:hover{
-                   
-                }
-            }
-        }
-    }
-}
 
 // video section end 
 
@@ -175,22 +172,63 @@
 .productSection{
     // background-color: $theme2;
     & .productItem{
+        transition: all 0.3s ease-in-out;
+        @include sm{
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
+        
+            &:hover{
+                & .productImg{
+                    & img{
+
+                        transform: scale(1.1);
+                    }
+                    
+                }
+            }
+        }
         & .productImg{
             margin-bottom: 22px;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
+        @include sm{
+            margin-bottom: 22px;
+            transition: all 0.3s ease-in-out;
+            overflow: hidden;
+            & img{
+                transition: all 0.3s ease-in-out;
+                overflow: hidden;
+            }
+        }
+
+
         }
         & .cardHeading{
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 600;
-            color: $black;
             margin-bottom: 18px;
+
+            @include md{
+
+                font-size: 24px;
+                font-weight: 600;
+                color: $black;
+                margin-bottom: 18px;
+
+            }
         }
         & .productInnerHeading{
-            font-size: 18px;
-            color: $black;
+            font-size: 14px;
             font-weight: 500;
-            transition: all 0.5s ease-in-out;
             &:hover{
                 color: $theme1;
+            }
+            @include md{
+                font-size: 18px;
+                color: $black;
+                font-weight: 500;
+                transition: all 0.5s ease-in-out;
+
             }
         }
         
@@ -198,28 +236,6 @@
 }
 
 
-@include media-breakpoint-down(md) {
-    .productSection{
-    
-        & .productItem{
-            & .productImg{
-            
-            }
-            & .cardHeading{
-                font-size: 20px;
-          
-            }
-            & .productInnerHeading{
-                font-size: 14px;
-           
-                &:hover{
-                    color: $theme1;
-                }
-            }
-            
-        }
-    }
-}
 
 
 // product Section end 
@@ -229,29 +245,38 @@
 .awardSection{
     background-color: $theme2;
     & .peraAwrd{
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
         color: $white;
+        @include lg{
+            font-size: 16px;
+            font-weight: 500;
+            color: $white;
+        }
     }
     & .awardImg{
-        width: 100px;
-        height: 90px;
+        width: 70px;
+        height: 60px;
+        @include lg{
+            width: 100px;
+            height: 90px;
+        }
+        @include sm{
+            & img{
+                transition: all 0.3s ease-in-out;
+
+            }
+            &:hover{
+                & img{
+                    transform: scale(1.1);
+                }
+
+            }
+        }
+
     }
 }
 
-@include media-breakpoint-down(sm) {
-    .awardSection{
-     
-        & .peraAwrd{
-            font-size: 14px;
-      
-        }
-        & .awardImg{
-            width: 70px;
-            height: 60px;
-        }
-    }
-}
 
 // award Section end 
 
@@ -260,51 +285,35 @@
 .aboutusSection{
     background-color: $theme2;
     & .aboutHeading{
-        font-size: 44px;
-        color: $white;
+        font-size: 28px;
         font-weight: 600;
+        
+        @include md{
+            font-size: 44px;
+            color: $white;
+            font-weight: 600;
+        }
+        @include sm{
+            font-size: 34px;
+            color: $white;
+            font-weight: 600;
+        }
+        
     }
     & .peraAwrd{
-        font-size: 16px;
-        font-weight: 500;
-        color: $white;
+        font-size: 14px;
         &  .pera1{
             color: $theme1;
             font-weight: 500;
         }
-    }
-}
-
-@include media-breakpoint-down(md) {
-    .aboutusSection{
-     
-        & .aboutHeading{
-            font-size: 34px;
-       
-        }
-        & .peraAwrd{
-     
-            &  .pera1{
-             
-            }
+        @include sm{
+            font-size: 16px;
+            font-weight: 500;
+            color: $white;
         }
     }
 }
 
-
-@include media-breakpoint-down(sm) {
-    .aboutusSection{
-        & .aboutHeading{
-            font-size: 28px;
-        }
-        & .peraAwrd{
-            font-size: 14px;
-            &  .pera1{
-             
-            }
-        }
-    }
-}
 
 
 // aboutus Section end 
@@ -314,19 +323,38 @@
 
 .ourWork{
     & .pastHeading{
-        font-size: 25px;
-        font-weight: 600;
-        color: $theme2;
-
+        font-size:20px;
+      
+        @include sm{
+            font-size: 25px;
+            font-weight: 600;
+            color: $theme2;
+        }
     }
     & .posterImg{
         & img{
-            transform: rotate(-1deg);
+            transform: rotate(1deg);
+            transition: all 0.3s ease-in-out;
+            @include sm{
+                transform: rotate(-1deg);
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    transform: rotate(1deg);
+                }
+            }
         }
     }
     & .posterIm2{
         & img{
-            transform: rotate(1deg);
+            transform: rotate(-1deg);
+            transition: all 0.3s ease-in-out;
+            @include sm{
+                transform: rotate(1deg);
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    transform: rotate(-1deg);
+                }
+            }
         }
     }
 }
