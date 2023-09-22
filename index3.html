@@ -876,7 +876,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 mt-5">
+            <div class="col-12 mt-lg-5 mt-4">
                 <div class="services-ticker-block">
                     <div class="stb_line_single">
                     <a href="#" class="stb-item">
@@ -938,7 +938,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
     <script>
         gsap.utils.toArray('.stb_line_single').forEach((line, i) => {
-  const links = line.querySelectorAll("a"),
+        const links = line.querySelectorAll("a"),
         tl = horizontalLoop(links, {
           repeat: -1, 
           speed: 1 + i * 0.5,
@@ -1000,7 +1000,7 @@ function horizontalLoop(items, config) {
 	}
 	function toIndex(index, vars) {
 		vars = vars || {};
-		(Math.abs(index - curIndex) > length / 2) && (index += index > curIndex ? -length : length); // always go in the shortest direction
+		(Math.abs(index - curIndex) > length / 1) && (index += index > curIndex ? -length : length); // always go in the shortest direction
 		let newIndex = gsap.utils.wrap(0, length, index),
 			time = times[newIndex];
 		if (time > tl.time() !== index > curIndex) { // if we're wrapping the timeline's playhead, make the proper adjustments
