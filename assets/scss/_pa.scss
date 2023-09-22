@@ -370,6 +370,10 @@ body{
                         padding: 10px 10px;
                         font-size: 12px;
                         margin: 20px 0;
+                        transition: 0.3s linear;
+                        &:hover{
+                            background-color: $theme1;
+                        }
                         @include sm{
                             padding: 5px 19px 5px;
                             font-size: 12px;
@@ -467,6 +471,109 @@ body{
                     }
                 }
             }
+        }
+    }
+}
+
+.footerFluid{
+    & .logo{
+        width: 87px;
+        height: 50px;
+        margin-bottom: 25px;
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    & .logoPara{
+        font-size: 14px;
+        color: #989797;
+        margin-bottom: 28px;
+    }
+    & .footerUl{
+        & .footerLi{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 12px;
+            margin-right: 8px;
+            transition: 0.3s linear;
+            &:hover{
+                background-color: $theme1;
+            }
+            & .footerAnchor{
+                & img{
+                    width: 15px;
+                    height: 15px;
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+    & .footerHeading{
+        font-weight: 500;
+        font-size: 20px;
+        color: $white;
+        margin-bottom: 25px;
+    }
+    & .instaImg{
+        aspect-ratio: 1/1;
+        & img{
+            width: 100%;
+            height: 100%;
+            transition: 0.3s linear;
+            &:hover{
+                filter: brightness(0.8);
+            }
+        }
+    }
+    & .linksUl{
+        & .linksLi{
+            list-style: none;
+            margin-bottom: 10px;
+            & .linksAnchor{
+                color: #cdcccc;
+                font-size: 15px;
+                text-decoration: none;
+                &:hover{
+                    color: $theme1;
+                }
+            }
+        }
+    }
+    & .contactImg{
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    & .contactTxt{
+        display: block;
+        color: #cdcccc;
+        font-size: 15px;
+    }
+    & .number{
+        display: block;
+        color: #cdcccc;
+        font-size: 15px;
+        text-decoration: none;
+        transition: 0.3s linear;
+        &:hover{
+            color: $theme1;
+        }
+    }
+    & .copyRyt{
+        margin-bottom: 0;
+        font-size: 15px;
+        color: $white;
+        font-weight: 500;
+        & span{
+            font-weight: 700;
+            color: #c1ab65;
         }
     }
 }
