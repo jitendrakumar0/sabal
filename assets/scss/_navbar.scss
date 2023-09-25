@@ -1,11 +1,20 @@
 @import "./mixins.scss";
 
 nav.navbar {
+    &.nav-active{
+        background-color: $theme2 !important;
+        & .navbar-brand{
+            & img{
+                height: 35px !important;
+            }
+        }
+    }
     [class*=container] {
         .navbar-brand {
             img {
                 height: 30px;
-                filter: drop-shadow(0px 0px 4px white)drop-shadow(0px 0px 4px white);
+                transition: 0.3s linear;
+                // filter: drop-shadow(0px 0px 4px white)drop-shadow(0px 0px 4px white);
                 @include md {
                     height: 50px;
                 }
@@ -35,6 +44,9 @@ nav.navbar {
                         .nav-link {
                             --bs-nav-link-color: $white;
                             --bs-nav-link-font-size: 13px;
+                            &:hover{
+                                --bs-nav-link-hover-color: darken($white, 20);
+                            }
                             &.active {
                                 --bs-navbar-active-color: darken($white, 20);
                             }
@@ -43,5 +55,10 @@ nav.navbar {
                 }
             }
         }
+    }
+}
+.navbar-toggler{
+    & .navbar-toggler-icon{
+        filter: brightness(10);
     }
 }

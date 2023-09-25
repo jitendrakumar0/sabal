@@ -1,11 +1,21 @@
 @import "./mixins.scss";
-body{
-    background-color: $black !important;
-}
 
 .mainHeading{
-    // margin-bottom: 40px;
     // padding-top: 70px;
+    margin-bottom: 20px;
+    @include sm{
+        margin-bottom: 20px;
+    } 
+    @include md{
+        margin-bottom: 20px;
+    }
+    @include lg{
+        margin-bottom: 40px;
+    }
+    @include xl{
+    }
+    @include xxl{
+    }
     & .heading{
         font-weight: 700;
         font-size: 14px;
@@ -43,18 +53,22 @@ body{
             font-size: 35px;
         }
         @include lg{
+            line-height: 110%;
             font-size: 35px;
         }
         @include xl{
             font-size: 40px;
+            line-height: 110%;
         }
         @include xxl{
             font-size: 45px;
+            line-height: 110%;
         }
     }
 }
 
 .historyFluid{
+    background-color: $theme2 !important;
     padding-bottom: 70px;
     & .historySwiperNavigation{
         position: relative;
@@ -276,13 +290,13 @@ body{
 }
 
 .heroFluid{
-    height: calc(100vh - 56px);
+    // height: calc(100vh - 56px);
     min-height: 400px;
     @include md {
-        height: calc(100vh - 76px);
+        // height: calc(100vh - 76px);
     }
     @include lg {
-        height: calc(100vh - 102px);
+        // height: calc(100vh - 102px);
     }
     & .heroSwiper{
         & .heroSwiperWrapper{
@@ -484,6 +498,7 @@ body{
 }
 
 .footerFluid{
+    background-color: $theme2;
     & .logo{
         width: 87px;
         height: 50px;
@@ -583,5 +598,66 @@ body{
             font-weight: 700;
             color: #c1ab65;
         }
+    }
+}
+
+.contactFluid{
+    & .formHeading{
+        font-size: 20px;
+        line-height: 110%; 
+        font-weight: 600;
+        @include sm{
+            font-size: 35px;
+        }  
+        @include md{
+            font-size: 35px;
+        }
+        @include lg{
+            line-height: 110%;
+            font-size: 35px;
+        }
+        @include xl{
+            font-size: 40px;
+            line-height: 110%;
+        }
+        @include xxl{
+            font-size: 45px;
+            line-height: 110%;
+        }
+    }
+    & .contactInp{
+        box-shadow: none;
+        border-color: #dee2e6;
+        border-radius: 5px;
+        height: 50px;
+        &:focus{
+            outline: unset;
+        }
+    }
+    & .txtArea{
+        width: 100%;
+        border-color: #dee2e6;
+        border-radius: 5px;
+        padding-left: 15px;
+        height: 100px;
+        &:focus-visible{
+            outline: unset;
+        }
+    }
+}
+
+.cardSectionRow{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    @include sm{
+    }  
+    @include md{
+    }
+    @include lg{
+        flex-wrap: wrap;
+    }
+    @include xl{
+    }
+    @include xxl{
     }
 }

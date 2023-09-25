@@ -4,226 +4,278 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="assets/libs/jquery/jquery.js"></script>
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="./assets/libs/swiper/css/swiper.css" rel="stylesheet">
 
     <link href="./assets/css/style.min.css" rel="stylesheet">
 </head>
 <body class="bg-white">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-lg-3 py-2">
-      <div class="container">
-        <a class="navbar-brand d-grid" href="#">
-          <img src="./assets/img/logo.png" alt="Bootstrap">
-        </a>
-        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link text-uppercase active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" href="#">Work</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" href="#">Award</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" href="#">Partners</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" href="#">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" href="#">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" href="#">News Room</a>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top py-lg-3 py-2">
+        <div class="container">
+            <a class="navbar-brand d-grid" href="#">
+            <img src="./assets/img/logo.png" alt="Bootstrap">
+            </a>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Sabal Production</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#award">Award</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#history">History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#releases">Releases</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">Partners</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">Contact us</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">News Room</a>
+                </li> -->
+                </ul>
+            </div>
+            </div>
         </div>
-      </div>
     </nav>
-    
-    <div class="container-fluid heroFluid px-0 overflow-hidden">
-      <div class="row h-100">
-          <div class="col-12 h-100">
-              <div class="swiper heroSwiper h-100">
-                  <div class="swiper-wrapper heroSwiperWrapper h-100">
-                      <div class="swiper-slide heroSwiperSlide h-100">
-                          <div class="row justify-content-center position-relative h-100">
-                              <div class="col-lg-6 col-12 px-4 text-center">
-                                  <div class="heroTxtBox">
-                                      <div class="heroHeading">GET THE BEST MOVIES HERE</div>
-                                      <div class="heroSubHeading">Zico Is High Quality Production House</div>
-                                      <button class="heroBtn d-flex justify-content-center align-items-center">Launch Now !</button>
-                                  </div>
-                                  <div class="socialLinks">
-                                      <ul class="socialUl p-0">
-                                          <li class="socialLi d-lg-none  mt-lg-4 mt-0">Follow us on:</li>
-                                          <li class="socialLi">
-                                              <a href="javascript:;" class="socialAnchor"><img src="assets/img/facebook.svg" alt=""></a>
-                                          </li>
-                                          <li class="socialLi">
-                                              <a href="javascript:;" class="socialAnchor"><img src="assets/img/twitter.svg" alt=""></a>
-                                          </li>
-                                          <li class="socialLi">
-                                              <a href="javascript:;" class="socialAnchor"><img src="assets/img/Pinterest.svg" alt=""></a>
-                                          </li>
-                                          <li class="socialLi mb-lg-4 mb-0">
-                                              <a href="javascript:;" class="socialAnchor"><img src="assets/img/insta.svg" alt=""></a>
-                                          </li>
-                                          <li class="socialLi d-lg-block d-none mt-lg-4 mt-0">Follow us on:</li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="swiper-slide heroSwiperSlide h-100">
-                          <div class="row justify-content-center position-relative h-100">
-                              <div class="col-lg-6 col-12 px-4 text-center">
-                                  <div class="heroTxtBox">
-                                      <div class="heroHeading">GET THE BEST MOVIES HERE</div>
-                                      <div class="heroSubHeading">Zico Is High Quality Production House</div>
-                                      <button class="heroBtn d-flex justify-content-center align-items-center">Launch Now !</button>
-                                  </div>
-                                  <div class="socialLinks">
-                                      <ul class="socialUl p-0">
-                                          <li class="socialLi d-lg-none  mt-lg-4 mt-0">Follow us on:</li>
-                                          <li class="socialLi">
-                                              <a href="javascript:;" class="socialAnchor"><img src="assets/img/facebook.svg" alt=""></a>
-                                          </li>
-                                          <li class="socialLi">
-                                              <a href="javascript:;" class="socialAnchor"><img src="assets/img/twitter.svg" alt=""></a>
-                                          </li>
-                                          <li class="socialLi">
-                                              <a href="javascript:;" class="socialAnchor"><img src="assets/img/Pinterest.svg" alt=""></a>
-                                          </li>
-                                          <li class="socialLi mb-lg-4 mb-0">
-                                              <a href="javascript:;" class="socialAnchor"><img src="assets/img/insta.svg" alt=""></a>
-                                          </li>
-                                          <li class="socialLi d-lg-block d-none mt-lg-4 mt-0">Follow us on:</li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="swiper-slide heroSwiperSlide h-100">
-                          <div class="row justify-content-center position-relative h-100">
-                              <div class="col-lg-6 col-12 px-4 text-center">
-                                  <div class="heroTxtBox">
-                                      <div class="heroHeading">GET THE BEST MOVIES HERE</div>
-                                      <div class="heroSubHeading">Zico Is High Quality Production House</div>
-                                      <button class="heroBtn d-flex justify-content-center align-items-center">Launch Now !</button>
-                                  </div>
-                                  <div class="socialLinks">
-                                      <ul class="socialUl p-0">
-                                          <li class="socialLi d-lg-none  mt-lg-4 mt-0">Follow us on:</li>
-                                          <li class="socialLi">
-                                              <a href="javascript:;" class="socialAnchor"><img src="assets/img/facebook.svg" alt=""></a>
-                                          </li>
-                                          <li class="socialLi">
-                                              <a href="javascript:;" class="socialAnchor"><img src="assets/img/twitter.svg" alt=""></a>
-                                          </li>
-                                          <li class="socialLi">
-                                              <a href="javascript:;" class="socialAnchor"><img src="assets/img/Pinterest.svg" alt=""></a>
-                                          </li>
-                                          <li class="socialLi mb-lg-4 mb-0">
-                                              <a href="javascript:;" class="socialAnchor"><img src="assets/img/insta.svg" alt=""></a>
-                                          </li>
-                                          <li class="socialLi d-lg-block d-none mt-lg-4 mt-0">Follow us on:</li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
-    <!-- about us section start  -->
-    <div class="container-fluid py-lg-5 py-md-4 py-3 aboutusSection">
-    <div class="container">
-      <div class="row gap-5">
-        <!-- <div class="col-12 mainHeading">
-          <div class="heading w-100  fw-semibold text-center">If opportunity doesn’t knock, build a door.– Milton Berle.</div>
-          <div class="subHeading  text-center fw-semibold ">About Us</div>
-        </div> -->
-        <div class="col-12">
-          <div class="row gap-lg-0 gap-3">
-            <div class="col-lg-6">
-              <div class="row">
-                <div class="col-12 pb-3">
-                  <div class="aboutHeading">What We Do</div>
+    <!-- hero section start -->
+    <div class="container-fluid heroFluid px-0 vh-100 overflow-hidden">
+        <div class="row h-100">
+            <div class="col-12 h-100">
+                <div class="swiper heroSwiper h-100">
+                    <div class="swiper-wrapper heroSwiperWrapper h-100">
+                        <div class="swiper-slide heroSwiperSlide h-100">
+                            <div class="row justify-content-center position-relative h-100">
+                                <div class="col-lg-6 col-12 px-4 text-center">
+                                    <div class="heroTxtBox">
+                                        <div class="heroHeading">GET THE BEST MOVIES HERE</div>
+                                        <div class="heroSubHeading">Sabal Is High Quality Production House</div>
+                                        <button class="heroBtn d-flex justify-content-center align-items-center">Launch Now !</button>
+                                    </div>
+                                    <div class="socialLinks">
+                                        <ul class="socialUl p-0">
+                                            <li class="socialLi d-lg-none  mt-lg-4 mt-0">Follow us on:</li>
+                                            <li class="socialLi">
+                                                <a href="javascript:;" class="socialAnchor"><img src="assets/img/facebook.svg" alt=""></a>
+                                            </li>
+                                            <li class="socialLi">
+                                                <a href="javascript:;" class="socialAnchor"><img src="assets/img/twitter.svg" alt=""></a>
+                                            </li>
+                                            <li class="socialLi">
+                                                <a href="javascript:;" class="socialAnchor"><img src="assets/img/Pinterest.svg" alt=""></a>
+                                            </li>
+                                            <li class="socialLi mb-lg-4 mb-0">
+                                                <a href="javascript:;" class="socialAnchor"><img src="assets/img/insta.svg" alt=""></a>
+                                            </li>
+                                            <li class="socialLi d-lg-block d-none mt-lg-4 mt-0">Follow us on:</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide heroSwiperSlide h-100">
+                            <div class="row justify-content-center position-relative h-100">
+                                <div class="col-lg-6 col-12 px-4 text-center">
+                                    <div class="heroTxtBox">
+                                        <div class="heroHeading">GET THE BEST MOVIES HERE</div>
+                                        <div class="heroSubHeading">Sabal Is High Quality Production House</div>
+                                        <button class="heroBtn d-flex justify-content-center align-items-center">Launch Now !</button>
+                                    </div>
+                                    <div class="socialLinks">
+                                        <ul class="socialUl p-0">
+                                            <li class="socialLi d-lg-none  mt-lg-4 mt-0">Follow us on:</li>
+                                            <li class="socialLi">
+                                                <a href="javascript:;" class="socialAnchor"><img src="assets/img/facebook.svg" alt=""></a>
+                                            </li>
+                                            <li class="socialLi">
+                                                <a href="javascript:;" class="socialAnchor"><img src="assets/img/twitter.svg" alt=""></a>
+                                            </li>
+                                            <li class="socialLi">
+                                                <a href="javascript:;" class="socialAnchor"><img src="assets/img/Pinterest.svg" alt=""></a>
+                                            </li>
+                                            <li class="socialLi mb-lg-4 mb-0">
+                                                <a href="javascript:;" class="socialAnchor"><img src="assets/img/insta.svg" alt=""></a>
+                                            </li>
+                                            <li class="socialLi d-lg-block d-none mt-lg-4 mt-0">Follow us on:</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide heroSwiperSlide h-100">
+                            <div class="row justify-content-center position-relative h-100">
+                                <div class="col-lg-6 col-12 px-4 text-center">
+                                    <div class="heroTxtBox">
+                                        <div class="heroHeading">GET THE BEST MOVIES HERE</div>
+                                        <div class="heroSubHeading">Sabal Is High Quality Production House</div>
+                                        <button class="heroBtn d-flex justify-content-center align-items-center">Launch Now !</button>
+                                    </div>
+                                    <div class="socialLinks">
+                                        <ul class="socialUl p-0">
+                                            <li class="socialLi d-lg-none  mt-lg-4 mt-0">Follow us on:</li>
+                                            <li class="socialLi">
+                                                <a href="javascript:;" class="socialAnchor"><img src="assets/img/facebook.svg" alt=""></a>
+                                            </li>
+                                            <li class="socialLi">
+                                                <a href="javascript:;" class="socialAnchor"><img src="assets/img/twitter.svg" alt=""></a>
+                                            </li>
+                                            <li class="socialLi">
+                                                <a href="javascript:;" class="socialAnchor"><img src="assets/img/Pinterest.svg" alt=""></a>
+                                            </li>
+                                            <li class="socialLi mb-lg-4 mb-0">
+                                                <a href="javascript:;" class="socialAnchor"><img src="assets/img/insta.svg" alt=""></a>
+                                            </li>
+                                            <li class="socialLi d-lg-block d-none mt-lg-4 mt-0">Follow us on:</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12">
-                  <div class="peraAwrd">We make <span class="pera1">movies</span> Full feature, shorts, tele-films, digital. The kind that go well with popcorn-cola, nimboo paani-chaat combos. The kind that go well whether consumed solo or with likeminded souls. The kind that ignite your brain’s frontal cortex (that’s the part that makes you laugh, cry, sigh).</div>
-                  <div class="peraAwrd mt-4">As producers, we are committed to our audiences first and foremost. We get that you have an option when you decide to watch cinema. We get that you’re choosing us over time spent on a valuable business deal, a job that pays well, an exam that needs preparation, a TV remote that’s addictive, etc etc etc. In an era of information overload, developing content that is original, meaningful and impacting lives, is critical to our company’s mission. In short, we value your choice, and your time.</div>
-                </div>
-              </div>
             </div>
-            <div class="col-lg-6">
-              <div class="directorImg"><img src="assets/img/camera.avif" alt="directorImg" class="img-fluid w-100 h-100"></div>
-            </div>
-            <div class="col-12">
-              <div class="peraAwrd mt-3">As producers, we are committed to that talent we showcase. From the on-screen artists, to the lead technicians, to the back office that makes a project come of full circle – every one counts. Piecing together a cohesive, competent team that conjures celluloid vision to reality is our company’s strength.</div>
-              <div class="peraAwrd mt-3">As producers, we are committed to our four point value proposition –</div>
-              <div class="peraAwrd  mt-2"> <span class="pera1"> <b>Imagine. Inspire. Engage. Entertain.</b> </span> </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
+    <!-- hero section end -->
+
+    <!-- about us section start  -->
+    <div class="container-fluid py-lg-5 py-md-4 py-3 aboutusSection position-relative" >
+        <div id="about" class="position-absolute invisible w-100 start-0 bottom-100" style="height: 80px;"></div>
+        <div class="container">
+            <div class="row gap-5">
+                <!-- <div class="col-12 mainHeading">
+                <div class="heading w-100  fw-semibold text-center">If opportunity doesn’t knock, build a door.– Milton Berle.</div>
+                <div class="subHeading  text-center fw-semibold ">About Us</div>
+                </div> -->
+                <div class="col-12">
+                <div class="row gap-lg-0 gap-3">
+                    <div class="col-lg-6">
+
+                    <div class="row mainHeading">
+                        <div class="col-12 pb-3">
+                        <div class="subHeading text-theme2">What We Do</div>
+                        </div>
+                        <div class="col-12">
+                        <div class="peraAwrd">We make <span class="pera1">movies</span> Full feature, shorts, tele-films, digital. The kind that go well with popcorn-cola, nimboo paani-chaat combos. The kind that go well whether consumed solo or with likeminded souls. The kind that ignite your brain’s frontal cortex (that’s the part that makes you laugh, cry, sigh).</div>
+                        <div class="peraAwrd mt-4">As producers, we are committed to our audiences first and foremost. We get that you have an option when you decide to watch cinema. We get that you’re choosing us over time spent on a valuable business deal, a job that pays well, an exam that needs preparation, a TV remote that’s addictive, etc etc etc. In an era of information overload, developing content that is original, meaningful and impacting lives, is critical to our company’s mission. In short, we value your choice, and your time.</div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-6">
+                    <div class="directorImg"><img src="assets/img/camera.avif" alt="directorImg" class="img-fluid w-100 h-100"></div>
+                    </div>
+                    <div class="col-12">
+                    <div class="peraAwrd mt-3">As producers, we are committed to that talent we showcase. From the on-screen artists, to the lead technicians, to the back office that makes a project come of full circle – every one counts. Piecing together a cohesive, competent team that conjures celluloid vision to reality is our company’s strength.</div>
+                    <div class="peraAwrd mt-3">As producers, we are committed to our four point value proposition –</div>
+                    <div class="peraAwrd  mt-2"> <span class="pera1"> <b>Imagine. Inspire. Engage. Entertain.</b> </span> </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- about us section end  -->
 
     <!-- award sectio  start  -->
-    <div class="container-fluid pb-lg-5 pb-md-4 pb-3 awardSection">
-      <div class="container">
-        <div class="row ">
-          <div class="col-12 mainHeading">
-            <div class="heading w-100 fw-semibold text-center">TRUST</div>
-            <div class="  subHeading text-center fw-semibold ">IN FILMS WE TRUST</div>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <div class="row">
-              <div class="col-12">
-                <div class="peraAwrd text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</div>
-              </div>
-              <div class="col-12 mt-md-4 mt-3">
-                <div class="row align-items-center justify-content-center mx-auto gy-4">
-                  <div class="col-lg-3 col-6">
-                    <div class="awardImg mx-auto"><img src="assets/img/trust1.png" alt="award" class="img-fluid w-100 h-100"></div>
-                  </div>
-                  <div class="col-lg-3 col-6">
-                    <div class="awardImg mx-auto"><img src="assets/img/trust1.png" alt="award" class="img-fluid w-100 h-100"></div>
-                  </div>
-                  <div class="col-lg-3 col-6">
-                    <div class="awardImg mx-auto"><img src="assets/img/trust1.png" alt="award" class="img-fluid w-100 h-100"></div>
-                  </div>
-                  <div class="col-lg-3 col-6">
-                    <div class="awardImg mx-auto"><img src="assets/img/trust1.png" alt="award" class="img-fluid w-100 h-100"></div>
-                  </div>
-                </div>
-              </div>
+    <div class="container-fluid py-lg-5 py-md-4 py-3 awardSection position-relative">
+        <div id="award" class="position-absolute invisible w-100 start-0 bottom-100" style="height: 80px;"></div>
+        <div class="container">
+            <div class="row mainHeading text-center">
+                <div class="col-12"><div class="heading">TRUST</div></div>
+                <div class="col-12"><div class="subHeading">IN FILMS WE TRUST</div></div>
             </div>
-          </div>
+            <div class="row ">
+            <div class="col-lg-8 mx-auto">
+                <div class="row">
+                <div class="col-12">
+                    <div class="peraAwrd text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</div>
+                </div>
+                <div class="col-12 mt-md-4 mt-3">
+                    <div class="row align-items-center justify-content-center mx-auto gy-4">
+                    <div class="col-lg-3 col-6">
+                        <div class="awardImg mx-auto"><img src="assets/img/trust1.png" alt="award" class="img-fluid w-100 h-100"></div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="awardImg mx-auto"><img src="assets/img/trust1.png" alt="award" class="img-fluid w-100 h-100"></div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="awardImg mx-auto"><img src="assets/img/trust1.png" alt="award" class="img-fluid w-100 h-100"></div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="awardImg mx-auto"><img src="assets/img/trust1.png" alt="award" class="img-fluid w-100 h-100"></div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
         </div>
-      </div>
     </div>
 
-    <div class="container-fluid historyFluid px-0 overflow-hidden bg-dark">
+    <!-- video section start  -->
+    <div class="container-fluid py-lg-5 py-md-4 py-3 videoSection">
+    <div class="container">
+        <div class="row mainHeading text-center">
+            <div class="col-12"><div class="heading">THIS WEEK</div></div>
+            <div class="col-12"><div class="subHeading text-theme2">OUR UPCOMING MOVIES</div></div>
+        </div>
+        <div class="row ">
+            <div class="col-12">
+            <div class="row gy-md-4 gy-3">
+                <div class="col-lg-4 col-md-6 ">
+                <div class="videoSectionInner">
+                    <div class="videoImg">
+                    <img src="assets/img/video1.jpg" alt="video" class="img-fluid w-100 h-100">
+                    </div>
+                    <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center videoIcon"><img src="assets/img/music.svg" alt="video play " class="img-fluid w-100 h-100"></a>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                <div class="videoSectionInner">
+                    <div class="videoImg">
+                    <img src="assets/img/video2.jpg" alt="video" class="img-fluid w-100 h-100">
+                    </div>
+                    <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center videoIcon"><img src="assets/img/music.svg" alt="video play " class="img-fluid w-100 h-100"></a>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                <div class="videoSectionInner">
+                    <div class="videoImg">
+                    <img src="assets/img/video3.jpg" alt="video" class="img-fluid w-100 h-100">
+                    </div>
+                    <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center videoIcon"><img src="assets/img/music.svg" alt="video play " class="img-fluid w-100 h-100"></a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- video section end  -->
+
+    <!-- history section start -->
+    <div class="container-fluid historyFluid py-lg-5 py-md-4 py-3 px-0 overflow-hidden bg-dark position-relative">
+        <div id="history" class="position-absolute invisible w-100 start-0 bottom-100" style="height: 80px;"></div>
         <div class="row mainHeading text-center">
             <div class="col-12"><div class="heading">HISTORY</div></div>
             <div class="col-12"><div class="subHeading">OUR HISTORY</div></div>
@@ -442,267 +494,218 @@
             </div>
         </div>
     </div>
+    <!-- history section end -->
+
+    <!-- product card  section start  -->
+        <div class="container-fluid py-lg-5 py-md-4 py-3 productSection">
+        <div class="container">
+            <div class="row mainHeading text-center">
+                <div class="col-12"><div class="heading">PRODUCT</div></div>
+                <div class="col-12"><div class="subHeading text-theme2">WE MAKE FILMS & DRAMA</div></div>
+            </div>
+            <div class="row gap-5"> 
+                <div class="col-12">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                    <div class="productItem">
+                        <div class="productImg"><img src="assets/img/product1.jpg" alt="product1" class="img-fluid w-100 h-100"></div>
+                        <div class="cardHeading text-center">Film Production</div>
+                        <ul class="list-unstyled d-flex flex-column gap-2">
+                            <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Creative Direction</a></li>
+                            <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Digital Content</a></li>
+                            <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Visual Effects</a></li>
+                            <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Videos Solution</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                    <div class="productItem">
+                        <div class="productImg"><img src="assets/img/product2.jpg" alt="product1" class="img-fluid w-100 h-100"></div>
+                        <div class="cardHeading text-center">Creative Direction</div>
+                        <ul class="list-unstyled d-flex flex-column gap-2">
+                            <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Creative Direction</a></li>
+                            <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Digital Content</a></li>
+                            <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Visual Effects</a></li>
+                            <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Videos Solution</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                    <div class="productItem">
+                        <div class="productImg"><img src="assets/img/product3.jpg" alt="product1" class="img-fluid w-100 h-100"></div>
+                        <div class="cardHeading text-center">Content Production</div>
+                        <ul class="list-unstyled d-flex flex-column gap-2">
+                            <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Creative Direction</a></li>
+                            <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Digital Content</a></li>
+                            <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Visual Effects</a></li>
+                            <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Videos Solution</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    <!-- product card  section end  --> 
 
     <!-- services section start -->
 
     <div class="container-fluid pb-lg-5 pb-md-4 pb-3 servicesSection">
-      <div class="container pt-lg-5 pt-md-4 py-3">
-        <div class="row ">
-          <div class="col-12 mainHeading">
-            <div class=" heading w-100 text-center fw-semibold text-center">WHAT WE DO</div>
-            <div class="  subHeading text-center text-center fw-semibold ">OUR SERVICES</div>
-          </div>
-          <div class="col-12">
-            <div class="row">
-              <div class="col-lg-4 col-md-6">
-                <div class="servicesCard">
-                  <div class="row">
-                    <div class="col-auto">
-                      <div class="cardIcon"><img src="assets/img/videoCamera.svg" alt="videoCamera" class="img-fluid w-100 h-100"></div>
-                    </div>
-                    <div class="col">
-                      <div class="cardHeading fw-semibold">Array Equipment</div>
-                      <div class="cardPera fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="servicesCard">
-                  <div class="row">
-                    <div class="col-auto">
-                      <div class="cardIcon"><img src="assets/img/videocamera2.svg" alt="videoCamera" class="img-fluid w-100 h-100"></div>
-                    </div>
-                    <div class="col">
-                      <div class="cardHeading fw-semibold">New Technologiest</div>
-                      <div class="cardPera fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="servicesCard">
-                  <div class="row">
-                    <div class="col-auto">
-                      <div class="cardIcon"><img src="assets/img/Mask.svg" alt="videoCamera" class="img-fluid w-100 h-100"></div>
-                    </div>
-                    <div class="col">
-                      <div class="cardHeading fw-semibold">Versatile Actors</div>
-                      <div class="cardPera fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="servicesCard">
-                  <div class="row">
-                    <div class="col-auto">
-                      <div class="cardIcon"><img src="assets/img/Mask.svg" alt="videoCamera" class="img-fluid w-100 h-100"></div>
-                    </div>
-                    <div class="col">
-                      <div class="cardHeading fw-semibold">Top Directions</div>
-                      <div class="cardPera fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="servicesCard">
-                  <div class="row">
-                    <div class="col-auto">
-                      <div class="cardIcon"><img src="assets/img/VideoEditing.svg" alt="videoCamera" class="img-fluid w-100 h-100"></div>
-                    </div>
-                    <div class="col">
-                      <div class="cardHeading fw-semibold">Video Editing</div>
-                      <div class="cardPera fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="servicesCard">
-                  <div class="row">
-                    <div class="col-auto">
-                      <div class="cardIcon"><img src="assets/img/transfarmer.svg" alt="videoCamera" class="img-fluid w-100 h-100"></div>
-                    </div>
-                    <div class="col">
-                      <div class="cardHeading fw-semibold">Distribution</div>
-                      <div class="cardPera fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="container pt-lg-5 pt-md-4 py-3">
+            <div class="row mainHeading text-center">
+                <div class="col-12"><div class="heading">WHAT WE DO</div></div>
+                <div class="col-12"><div class="subHeading">OUR SERVICES</div></div>
             </div>
-          </div>
+            <div class="row ">
+            <div class="col-12">
+                <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="servicesCard">
+                    <div class="row">
+                        <div class="col-auto">
+                        <div class="cardIcon"><img src="assets/img/videoCamera.svg" alt="videoCamera" class="img-fluid w-100 h-100"></div>
+                        </div>
+                        <div class="col">
+                        <div class="cardHeading fw-semibold">Array Equipment</div>
+                        <div class="cardPera fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="servicesCard">
+                    <div class="row">
+                        <div class="col-auto">
+                        <div class="cardIcon"><img src="assets/img/videocamera2.svg" alt="videoCamera" class="img-fluid w-100 h-100"></div>
+                        </div>
+                        <div class="col">
+                        <div class="cardHeading fw-semibold">New Technologiest</div>
+                        <div class="cardPera fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="servicesCard">
+                    <div class="row">
+                        <div class="col-auto">
+                        <div class="cardIcon"><img src="assets/img/Mask.svg" alt="videoCamera" class="img-fluid w-100 h-100"></div>
+                        </div>
+                        <div class="col">
+                        <div class="cardHeading fw-semibold">Versatile Actors</div>
+                        <div class="cardPera fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="servicesCard">
+                    <div class="row">
+                        <div class="col-auto">
+                        <div class="cardIcon"><img src="assets/img/Mask.svg" alt="videoCamera" class="img-fluid w-100 h-100"></div>
+                        </div>
+                        <div class="col">
+                        <div class="cardHeading fw-semibold">Top Directions</div>
+                        <div class="cardPera fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="servicesCard">
+                    <div class="row">
+                        <div class="col-auto">
+                        <div class="cardIcon"><img src="assets/img/VideoEditing.svg" alt="videoCamera" class="img-fluid w-100 h-100"></div>
+                        </div>
+                        <div class="col">
+                        <div class="cardHeading fw-semibold">Video Editing</div>
+                        <div class="cardPera fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="servicesCard">
+                    <div class="row">
+                        <div class="col-auto">
+                        <div class="cardIcon"><img src="assets/img/transfarmer.svg" alt="videoCamera" class="img-fluid w-100 h-100"></div>
+                        </div>
+                        <div class="col">
+                        <div class="cardHeading fw-semibold">Distribution</div>
+                        <div class="cardPera fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
         </div>
-      </div>
     </div>
     <!-- services section start -->
 
-
-    <!-- video section start  -->
-    <div class="container-fluid py-lg-5 py-md-4 py-3 videoSection">
-    <div class="container">
-      <div class="row ">
-        <div class="col-12 mainHeading">
-          <div class="Heading  fw-semibold text-center">THIS WEEK</div>
-          <div class=" subHeading text-center fw-semibold  text-theme2">OUR UPCOMING MOVIES</div>
-        </div>
-        <div class="col-12">
-          <div class="row gy-md-4 gy-3">
-            <div class="col-lg-4 col-md-6 ">
-              <div class="videoSectionInner">
-                <div class="videoImg">
-                  <img src="assets/img/video1.jpg" alt="video" class="img-fluid w-100 h-100">
-                </div>
-                <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center videoIcon"><img src="assets/img/music.svg" alt="video play " class="img-fluid w-100 h-100"></a>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 ">
-              <div class="videoSectionInner">
-                <div class="videoImg">
-                  <img src="assets/img/video2.jpg" alt="video" class="img-fluid w-100 h-100">
-                </div>
-                <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center videoIcon"><img src="assets/img/music.svg" alt="video play " class="img-fluid w-100 h-100"></a>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 ">
-              <div class="videoSectionInner">
-                <div class="videoImg">
-                  <img src="assets/img/video3.jpg" alt="video" class="img-fluid w-100 h-100">
-                </div>
-                <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center videoIcon"><img src="assets/img/music.svg" alt="video play " class="img-fluid w-100 h-100"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <!-- video section end  -->
-
     <!-- award sectio  end  -->
 
-    <!-- product card  section start  -->
-
-    <div class="container-fluid py-lg-5 py-md-4 py-3 productSection">
-    <div class="container">
-      <div class="row gap-5">
-        <div class="col-12">
-          <div class="subheading  fw-semibold text-center">PRODUCT</div>
-          <div class="Heading2  text-center fw-semibold ">WE MAKE FILMS & DRAMA</div>
-        </div>
-        <div class="col-12">
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="productItem">
-                <div class="productImg"><img src="assets/img/product1.jpg" alt="product1" class="img-fluid w-100 h-100"></div>
-                <div class="cardHeading text-center">Film Production</div>
-                  <ul class="list-unstyled d-flex flex-column gap-2">
-                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Creative Direction</a></li>
-                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Digital Content</a></li>
-                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Visual Effects</a></li>
-                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Videos Solution</a></li>
-                  </ul>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="productItem">
-                <div class="productImg"><img src="assets/img/product2.jpg" alt="product1" class="img-fluid w-100 h-100"></div>
-                <div class="cardHeading text-center">Creative Direction</div>
-                  <ul class="list-unstyled d-flex flex-column gap-2">
-                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Creative Direction</a></li>
-                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Digital Content</a></li>
-                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Visual Effects</a></li>
-                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Videos Solution</a></li>
-                  </ul>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="productItem">
-                <div class="productImg"><img src="assets/img/product3.jpg" alt="product1" class="img-fluid w-100 h-100"></div>
-                <div class="cardHeading text-center">Content Production</div>
-                  <ul class="list-unstyled d-flex flex-column gap-2">
-                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Creative Direction</a></li>
-                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Digital Content</a></li>
-                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Visual Effects</a></li>
-                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center productInnerHeading">Videos Solution</a></li>
-                  </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <!-- product card  section end  -->
-
-
-
-
-
-
     <!-- our work start  -->
-    <div class="container-fluid py-lg-5 py-md-4 py-3 ourWork">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="Heading2  text-center fw-semibold ">OUR WORK</div>
-          <div class="subheading  fw-semibold text-center">“Creative is the place where no one else has ever been. You have to leave the city of your comfort and go into the wilderness of your intuition. What you’ll discover will be wonderful. What you’ll discover is yourself." — Alan Alda</div>
+    <div class="container-fluid py-lg-5 py-md-4 py-3 ourWork position-relative">
+        <div id="releases" class="position-absolute invisible w-100 start-0 bottom-100" style="height: 80px;"></div>
+        <div class="container">
+            <div class="row mainHeading text-center">
+                <div class="col-12"><div class="heading"> PAST RELEASES</div></div>
+                <div class="col-12"><div class="subHeading text-theme2">OUR WORK</div></div>
+            </div>
+        <div class="row">
+            <div class="col-12">
+                <!-- <div class="Heading2  text-center fw-semibold ">OUR WORK</div> -->
+                <div class="subheading  fw-semibold text-center">“Creative is the place where no one else has ever been. You have to leave the city of your comfort and go into the wilderness of your intuition. What you’ll discover will be wonderful. What you’ll discover is yourself." — Alan Alda</div>
+            </div>
+            <!-- <div class="col-12">
+            <div class="  pastHeading text-center mt-4"> PAST RELEASES</div>
+            </div> -->
+            <div class="col-12 mx-auto mt-lg-5 mt-3">
+            <div class="row gy-lg-5 gy-3">
+                <div class="col-lg-4 col-md-6 col-12">
+                <div class="posterImg"><img src="assets/img/empire.png" alt="empire" class="img-fluid w-100 h-100"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                <div class="posterImg posterIm2"><img src="assets/img/empire2.png" alt="empire" class="img-fluid w-100 h-100"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                <div class="posterImg"><img src="assets/img/emire3.png" alt="empire" class="img-fluid w-100 h-100"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                <div class="posterImg posterIm2"><img src="assets/img/empire5.png" alt="empire" class="img-fluid w-100 h-100"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                <div class="posterImg"><img src="assets/img/emire3.png" alt="empire" class="img-fluid w-100 h-100"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                <div class="posterImg posterIm2"><img src="assets/img/empire6.png" alt="empire" class="img-fluid w-100 h-100"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                <div class="posterImg"><img src="assets/img/empire8.png" alt="empire" class="img-fluid w-100 h-100"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                <div class="posterImg posterIm2"><img src="assets/img/empire9.png" alt="empire" class="img-fluid w-100 h-100"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                <div class="posterImg posterIm2"><img src="assets/img/empire10.png" alt="empire" class="img-fluid w-100 h-100"></div>
+                </div>
+            </div>
+            </div>
         </div>
-        <div class="col-12">
-          <div class="  pastHeading text-center mt-4"> PAST RELEASES</div>
         </div>
-        <div class="col-12 mx-auto mt-5">
-          <div class="row gy-5">
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="posterImg"><img src="assets/img/empire.png" alt="empire" class="img-fluid w-100 h-100"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="posterImg posterIm2"><img src="assets/img/empire2.png" alt="empire" class="img-fluid w-100 h-100"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="posterImg"><img src="assets/img/emire3.png" alt="empire" class="img-fluid w-100 h-100"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="posterImg posterIm2"><img src="assets/img/empire5.png" alt="empire" class="img-fluid w-100 h-100"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="posterImg"><img src="assets/img/emire3.png" alt="empire" class="img-fluid w-100 h-100"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="posterImg posterIm2"><img src="assets/img/empire6.png" alt="empire" class="img-fluid w-100 h-100"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="posterImg"><img src="assets/img/empire8.png" alt="empire" class="img-fluid w-100 h-100"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="posterImg posterIm2"><img src="assets/img/empire9.png" alt="empire" class="img-fluid w-100 h-100"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="posterImg posterIm2"><img src="assets/img/empire10.png" alt="empire" class="img-fluid w-100 h-100"></div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-    </div>
-
     <!-- our work end  -->
 
-
-
     <!-- featured Section Start -->
-    <div class="container-fluid featuredSection pb-lg-5 pb-md-4 pb-3">
+    <div class="container-fluid featuredSection py-lg-5 py-md-4 py-3">
+        <div class="row mainHeading text-center">
+            <div class="col-12"><div class="heading"> our work</div></div>
+            <div class="col-12"><div class="subHeading">FEATURED WORK</div></div>
+        </div>
         <div class="row">
-            <div class="col-12 mainHeading">
-                <div class="Heading text-theme1 text-center py-2">
-                    our work
-                </div>
-                <div class="subHeading text-white text-center">
-                    FEATURED WORK
-                </div>
-            </div>
             <div class="commercialSection ">
                 <div class="col-12">
                     <div class="row">
@@ -712,7 +715,7 @@
                                     <div class="workImg">
                                         <img src="./assets/img/ladydj.jpg" alt="workimg" class="h-100 w-100 img-fluid">
                                         </div>
-                                        <div class="worktext w-100 position-absolute start-50 translate-middle-x">
+                                        <div class="worktext w-100 position-absolute translate-middle start-50 ">
                                             <div class="head text-white text-center">
                                                 We make it awesome
                                             </div>
@@ -729,7 +732,7 @@
                                     <div class="workImg">
                                         <img src="./assets/img/jalpari.jpg" alt="workimg" class="h-100 w-100 img-fluid">
                                         </div>
-                                        <div class="worktext w-100 position-absolute start-50 translate-middle-x">
+                                        <div class="worktext w-100 position-absolute translate-middle start-50 ">
                                             <div class="head text-white text-center">
                                                 my dream girl
                                             </div>
@@ -747,47 +750,43 @@
     </div>
     <!-- featured Section Ends -->
 
-
     <!-- Directors Section Start -->
-    <div class="container-fluid teamSection bg-light pb-5">
+    <div class="container-fluid teamSection bg-light py-lg-5 py-md-4 py-3 position-relative">
+        <div id="team" class="position-absolute invisible w-100 start-0 bottom-100" style="height: 80px;"></div>
         <div class="container">
+            <div class="row mainHeading text-center">
+                <div class="col-12"><div class="heading">OUR TEAM</div></div>
+                <div class="col-12"><div class="subHeading text-theme2"> FOUNDERS OF Sabal</div></div>
+            </div>
             <div class="row">
-                <div class="col-12 mainHeading">
-                    <div class="heading text-center w-100">
-                        our team
-                    </div>
-                    <div class="subHeading text-center text-theme2 ">
-                        FOUNDERS OF ZICO
-                    </div>
-                </div>
                 <div class="col-12">
                     <div class="cardSection ">
-                        <div class="row">
-                            <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="row cardSectionRow">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-4">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/dir1.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -802,31 +801,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-4">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/dir2.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -841,31 +840,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-4">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/dir3.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -888,9 +887,8 @@
     </div>
     <!-- Directors Section Ends -->
 
-    
     <!-- team Section Start -->
-    <div class="container-fluid teamSection pb-5">
+    <div class="container-fluid teamSection py-lg-5 py-md-4 py-3">
         <div class="container">
             <div class="row">
                 <div class="col-12 mainHeading">
@@ -898,37 +896,37 @@
                         our team
                     </div>
                     <div class="subHeading text-center text-dark">
-                        DIRECTORS OF ZICO
+                        DIRECTORS OF Sabal
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="cardSection pt-4">
-                        <div class="row">
-                            <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="cardSection pt4">
+                        <div class="row cardSectionRow">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-3">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/team01.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -943,31 +941,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-3">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/team02.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -982,31 +980,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-3">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/team03.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -1021,31 +1019,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-3">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/team04.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -1060,31 +1058,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-3">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/team05.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -1099,31 +1097,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-3">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/team06.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -1138,31 +1136,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-3">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/team07.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -1177,31 +1175,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="col-md-5 col-10 col-sm-6 col-lg-3">
                                 <div class="card border-0 bg-transparent text-center mainCard ">
                                     <div class="card-body px-1">
-                                        <div class="cardImg position-relative">
+                                        <div class="cardImg position-relative overflow-hidden">
                                             <img src="./assets/img/team08.jpg" alt="team" class="h-100 w-100 img-fluid">
-                                            <div class="socialLinks position-absolute start-50 translate-middle-x bottom-0">
+                                            <div class="socialLinks position-absolute start-50  bottom-0">
                                                 <ul class="list-unstyled d-flex align-items-center justify-content-center gap-1">
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/facebook.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-x-twitter"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/twitter.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-pinterest-p"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/Pinterest.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="text-decoration-none text-white">
-                                                            <i class="fa-brands fa-instagram"></i>
+                                                        <a href="#" class="text-decoration-none text-white teamIcons ">
+                                                            <img src="assets/img/insta.svg" alt="">
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -1225,126 +1223,120 @@
     <!-- team Section Ends -->
 
     <!-- partners Section start -->
-    <div class="container-fluid bg-black py-5">
-        <div class="partnersLogoSection ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="heading text-theme1 text-center py-2">
-                            OUR PARTNERS
-                        </div>
-                        <div class="subheading text-white text-center">
-                            “Partnerships are good engines for narrative.” - Tommy Lee Jones
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="pt-5 mt-5">
-                            <div class="row">
-                                <div class="col-4  col-sm-3">
-                                    <div class="card border-0 bg-transparent text-center ">
-                                        <div class="card-body">
-                                            <div class="partnersLogo">
-                                                <img src="./assets/img/t-serieslogomain.png" alt="partnerslogo" class="h-100 w-100 img-fluid object-fit-contain">
-                                            </div>
-                                            <div class="head py-2 text-white">
-                                                T-series
-                                            </div>
+    <!-- <div class="container-fluid bg-black py-5 partnersLogoSection">
+        <div class="container">
+            <div class="row mainHeading text-center">
+                <div class="col-12"><div class="subHeading"> OUR PARTNERS</div></div>
+                <div class="col-12"><div class="subHeading"> “Partnerships are good engines for narrative.” - Tommy Lee Jones</div></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="pt-5 mt-5">
+                        <div class="row">
+                            <div class="col-4  col-sm-3">
+                                <div class="card border-0 bg-transparent text-center ">
+                                    <div class="card-body">
+                                        <div class="partnersLogo">
+                                            <img src="./assets/img/t-serieslogomain.png" alt="partnerslogo" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </div>
+                                        <div class="head py-2 text-white">
+                                            T-series
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4  col-sm-3">
-                                    <div class="card border-0 bg-transparent text-center ">
-                                        <div class="card-body">
-                                            <div class="partnersLogo">
-                                                <img src="./assets/img/ZeeStudios.webp" alt="partnerslogo" class="h-100 w-100 img-fluid object-fit-contain">
-                                            </div>
-                                            <div class="head py-2 text-white">
-                                                Zee Studios
-                                            </div>
+                            </div>
+                            <div class="col-4  col-sm-3">
+                                <div class="card border-0 bg-transparent text-center ">
+                                    <div class="card-body">
+                                        <div class="partnersLogo">
+                                            <img src="./assets/img/ZeeStudios.webp" alt="partnerslogo" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </div>
+                                        <div class="head py-2 text-white">
+                                            Zee Studios
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4  col-sm-3">
-                                    <div class="card border-0 bg-transparent text-center ">
-                                        <div class="card-body">
-                                            <div class="partnersLogo">
-                                                <img src="./assets/img/applauselogo.png" alt="partnerslogo" class="h-100 w-100 img-fluid object-fit-contain">
-                                            </div>
-                                            <div class="head py-2 text-white">
-                                                Applause Entertainment
-                                            </div>
+                            </div>
+                            <div class="col-4  col-sm-3">
+                                <div class="card border-0 bg-transparent text-center ">
+                                    <div class="card-body">
+                                        <div class="partnersLogo">
+                                            <img src="./assets/img/applauselogo.png" alt="partnerslogo" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </div>
+                                        <div class="head py-2 text-white">
+                                            Applause Entertainment
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4  col-sm-3">
-                                    <div class="card border-0 bg-transparent text-center ">
-                                        <div class="card-body">
-                                            <div class="partnersLogo bgwhite">
-                                                <img src="./assets/img/amazonmain.png" alt="partnerslogo" class="h-100 w-100 img-fluid object-fit-contain">
-                                            </div>
-                                            <div class="head py-2 text-white">
-                                                Amazon Prime Video
-                                            </div>
+                            </div>
+                            <div class="col-4  col-sm-3">
+                                <div class="card border-0 bg-transparent text-center ">
+                                    <div class="card-body">
+                                        <div class="partnersLogo bgwhite">
+                                            <img src="./assets/img/amazonmain.png" alt="partnerslogo" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </div>
+                                        <div class="head py-2 text-white">
+                                            Amazon Prime Video
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4  col-sm-3">
-                                    <div class="card border-0 bg-transparent text-center ">
-                                        <div class="card-body">
-                                            <div class="partnersLogo">
-                                                <img src="./assets/img/disney.webp" alt="partnerslogo" class="h-100 w-100 img-fluid object-fit-contain">
-                                            </div>
-                                            <div class="head py-2 text-white">
-                                                Disney+ Hotstar
-                                            </div>
+                            </div>
+                            <div class="col-4  col-sm-3">
+                                <div class="card border-0 bg-transparent text-center ">
+                                    <div class="card-body">
+                                        <div class="partnersLogo">
+                                            <img src="./assets/img/disney.webp" alt="partnerslogo" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </div>
+                                        <div class="head py-2 text-white">
+                                            Disney+ Hotstar
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4  col-sm-3">
-                                    <div class="card border-0 bg-transparent text-center ">
-                                        <div class="card-body">
-                                            <div class="partnersLogo ">
-                                                <img src="./assets/img/Group zee.png" alt="partnerslogo" class="h-100 w-100 img-fluid object-fit-contain">
-                                            </div>
-                                            <div class="head py-2 text-white">
-                                                Zee5
-                                            </div>
+                            </div>
+                            <div class="col-4  col-sm-3">
+                                <div class="card border-0 bg-transparent text-center ">
+                                    <div class="card-body">
+                                        <div class="partnersLogo ">
+                                            <img src="./assets/img/Group zee.png" alt="partnerslogo" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </div>
+                                        <div class="head py-2 text-white">
+                                            Zee5
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4  col-sm-3">
-                                    <div class="card border-0 bg-transparent text-center ">
-                                        <div class="card-body">
-                                            <div class="partnersLogo ">
-                                                <img src="./assets/img/Netflix.png" alt="partnerslogo" class="h-100 w-100 img-fluid object-fit-contain">
-                                            </div>
-                                            <div class="head py-2 text-white">
-                                                Netflix
-                                            </div>
+                            </div>
+                            <div class="col-4  col-sm-3">
+                                <div class="card border-0 bg-transparent text-center ">
+                                    <div class="card-body">
+                                        <div class="partnersLogo ">
+                                            <img src="./assets/img/Netflix.png" alt="partnerslogo" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </div>
+                                        <div class="head py-2 text-white">
+                                            Netflix
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4  col-sm-3">
-                                    <div class="card border-0 bg-transparent text-center ">
-                                        <div class="card-body">
-                                            <div class="partnersLogo">
-                                                <img src="./assets/img/SonyLiv.webp" alt="partnerslogo" class="h-100 w-100 img-fluid object-fit-contain">
-                                            </div>
-                                            <div class="head py-2 text-white">
-                                                SonyLiv
-                                            </div>
+                            </div>
+                            <div class="col-4  col-sm-3">
+                                <div class="card border-0 bg-transparent text-center ">
+                                    <div class="card-body">
+                                        <div class="partnersLogo">
+                                            <img src="./assets/img/SonyLiv.webp" alt="partnerslogo" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </div>
+                                        <div class="head py-2 text-white">
+                                            SonyLiv
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4  col-sm-3">
-                                    <div class="card border-0 bg-transparent text-center ">
-                                        <div class="card-body">
-                                            <div class="partnersLogo">
-                                                <img src="./assets/img/Viacom main.png" alt="partnerslogo" class="h-100 w-100 img-fluid object-fit-contain">
-                                            </div>
-                                            <div class="head py-2 text-white">
-                                                Viacom 18
-                                            </div>
+                            </div>
+                            <div class="col-4  col-sm-3">
+                                <div class="card border-0 bg-transparent text-center ">
+                                    <div class="card-body">
+                                        <div class="partnersLogo">
+                                            <img src="./assets/img/Viacom main.png" alt="partnerslogo" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </div>
+                                        <div class="head py-2 text-white">
+                                            Viacom 18
                                         </div>
                                     </div>
                                 </div>
@@ -1354,19 +1346,184 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- partners Section ends -->
-    
+
+    <!-- contact us start -->
+        <div class="container-fluid contactFluid pb-lg-5 pb-md-4 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="row">
+                            <div class="col-12 mb-4">
+                                <div class="formHeading">Get In Touch</div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-12">
+                                        <input type="text" class="form-control contactInp" name="" id="" placeholder="Name">
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <input type="email" class="form-control contactInp" name="" id="" placeholder="Email">
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <input type="tel" class="form-control contactInp" name="" id="" placeholder="Phone">
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <input type="text" class="form-control contactInp" name="" id="" placeholder="Subject">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea name="" class="txtArea" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12"></div>
+                </div>
+            </div>
+        </div>
+    <!-- contact us end -->
+
+    <!-- footer section start -->
+        <footer>
+            <div class="container-fluid footerFluid py-3">
+                <!-- <div class="row">
+                    <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0 col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="logo">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="logoPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aviverra</div>
+                            </div>
+                            <div class="col-12">
+                                <ul class="footerUl p-0 d-flex">
+                                    <li class="footerLi"><a href="javascript:;" class="footerAnchor"><img src="assets/img/facebook.svg" alt=""></a>
+                                    </li>
+                                    <li class="footerLi"><a href="javascript:;" class="footerAnchor"><img src="assets/img/twitter.svg" alt=""></a>
+                                    </li>
+                                    <li class="footerLi"><a href="javascript:;" class="footerAnchor"><img src="assets/img/Pinterest.svg" alt=""></a>
+                                    </li>
+                                    <li class="footerLi"><a href="javascript:;" class="footerAnchor"><img src="assets/img/insta.svg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0 col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="footerHeading">Instagram</div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row g-2">
+                                    <div class="col-4">
+                                        <a href="javascript:;" class="instaImg">
+                                            <img src="assets/img/insta1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="javascript:;" class="instaImg">
+                                            <img src="assets/img/insta2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="javascript:;" class="instaImg">
+                                            <img src="assets/img/insta3.jpg" alt="">
+                                        </a>
+                                    </div> 
+                                    <div class="col-4">
+                                        <a href="javascript:;" class="instaImg">
+                                            <img src="assets/img/insta1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="javascript:;" class="instaImg">
+                                            <img src="assets/img/insta2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="javascript:;" class="instaImg">
+                                            <img src="assets/img/insta3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0 col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="footerHeading">Useful Links</div>
+                            </div>
+                            <div class="col-12">
+                                <ul class="linksUl p-0">
+                                    <li class="linksLi"><a href="javascript:;" class="linksAnchor">Home</a></li>
+                                    <li class="linksLi"><a href="javascript:;" class="linksAnchor">About</a></li>
+                                    <li class="linksLi"><a href="javascript:;" class="linksAnchor">Works</a></li>
+                                    <li class="linksLi"><a href="javascript:;" class="linksAnchor">Vedio</a></li>
+                                    <li class="linksLi"><a href="javascript:;" class="linksAnchor">Blog</a></li>
+                                    <li class="linksLi"><a href="javascript:;" class="linksAnchor">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="footerHeading">Get In Touch</div>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <div class="row">
+                                    <div class="col-auto"><div class="contactImg"><img src="assets/img/call.svg" alt=""></div></div>
+                                    <div class="col">
+                                        <div class="contactTxt">Phone:</div>
+                                        <div class=""><a href="javascript:;" class="number">+8988989898</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <div class="row">
+                                    <div class="col-auto"><div class="contactImg"><img src="assets/img//massege.svg" alt=""></div></div>
+                                    <div class="col">
+                                        <div class="contactTxt">Email:</div>
+                                        <div class=""><a href="javascript:;" class="number">abc@gmail.com</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <div class="row">
+                                    <div class="col-auto"><div class="contactImg"><img src="assets/img/location.svg" alt=""></div></div>
+                                    <div class="col">
+                                        <div class="contactTxt">Address:</div>
+                                        <div class=""><div href="javascript:;" class="number">3254-425 NW-2nd Ave, Miami USA</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="copyRyt">© Sabal is Proudly Owned by <span>EnvyTheme</span></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- footer section end -->
     <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/libs/swiper/js/swiper.js"></script>
     
     <script>
-      var swiper = new Swiper(".heroSwiper", {
-          navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-          },
-      });
+        var swiper = new Swiper(".heroSwiper", {
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
     </script>
     <script>
         var swiper = new Swiper(".historySwiper", {
@@ -1382,6 +1539,16 @@
                 return '<span class="' + className + '">' + "<span class='year'>" + years[index] + "</span>" + "</span>";
         },
             },
+        });
+    </script>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll <= 120) {
+                $("nav.navbar").removeClass("nav-active");
+            } else {
+                $("nav.navbar").addClass("nav-active");
+            }
         });
     </script>
 </body>
