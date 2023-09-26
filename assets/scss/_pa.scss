@@ -305,8 +305,8 @@
                 &::after{
                     content: '';
                     // background-image: url(../img/heroImg.jpg);
-                    background-image: url(../img/sabalMovie.avif);
-                    background-position: center;
+                    background-image: url(../img/sabalMovie2.jpg);
+                    background-position: center top;
                     background-size: cover;
                     background-repeat: no-repeat;
                     width: 100%;
@@ -314,6 +314,9 @@
                     position: absolute;
                     top: 0;
                     left: 0;
+                    @include sm{
+                        background-image: url(../img/sabalMovie.avif);
+                    }
                 }
                 &::before{
                     content: '';
