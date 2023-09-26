@@ -110,6 +110,7 @@
             @include sm{
                 height: 250px;
                 overflow: hidden;
+                display: block;
                 & img{
              transition: all 0.4s ease-in-out;
              overflow: hidden;
@@ -241,7 +242,126 @@
     }
 }
 
-
+// News Section Start
+.newsSection{
+    background-color: $white;
+    & .newsback{
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+    & .newsMain{
+        border-radius: 10px;
+    & .newstext{
+        & .heading{
+            font-size: 19px;
+            line-height: 26px;
+            font-weight: 700;
+            transition: all .5s ease-in-out;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        & .text{
+            font-size: 14px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        & .readtxt{
+            & .readanc{
+                font-size: 14px;
+                transition: all .5s ease-in-out;
+                }
+            }
+        }
+        & .newsimg{
+            overflow: hidden;
+            cursor: pointer;
+            transition: all .5s ease-in-out;
+            overflow: hidden;
+            border-radius: 5px;
+            height: 180px;
+            
+        }
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        
+    }
+    &:hover{
+        & .heading{
+            // color: $theme1 !important;
+        }
+        & .newsimg{
+            transform: scale(1.02);
+        }
+        & .readtxt{
+            & .readanc{
+                color: $theme1 !important;
+                }
+            }
+        }
+    }
+    & .swiper-button-next{
+        &::after{
+            display: none !important;
+        }
+    }
+    & .arrowimg{
+        height: 50px;
+        min-width: 50px;
+        max-width: 50px;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #a4a2a2;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .6s ease-in-out;
+    }
+    & .swiper-button-prev{
+        &::after{
+            display: none !important;
+        }
+        & img {
+            transform: rotate(180deg);
+        }
+    }
+    &:hover{
+        & .swiper-button-next{
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(70px);
+        }
+        & .swiper-button-prev{
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-70px);
+        }
+    }
+}
+// News Section Ends
 
 
 // product Section end 
